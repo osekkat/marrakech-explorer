@@ -1,0 +1,38 @@
+import { Link, useLocation } from "react-router-dom";
+import { Compass, Heart, Map, Calendar, Lightbulb } from "lucide-react";
+
+const navItems = [
+  { path: "/", icon: Compass, label: "Home" },
+  { path: "/itineraries", icon: Calendar, label: "Plan" },
+  { path: "/picks", icon: Heart, label: "Our Picks" },
+  { path: "/explore", icon: Map, label: "Explore" },
+  { path: "/toolkit", icon: Lightbulb, label: "Tips" },
+];
+
+export const BottomNav = () => {
+  const location = useLocation();
+
+  return (
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg bg-background/90 backdrop-blur-xl border-t border-border z-50">
+      <div className="flex items-center justify-around py-2 px-1">
+        {navItems.map(({ path, icon: Icon, label }) => {
+          const isActive = location.pathname === path;
+          return (
+            <Link
+              key={path}
+              to={path}
+              className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg transition-colors ${
+                isActive
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <Icon className="w-5 h-5" strokeWidth={isActive ? 2.5 : 1.8} />
+              <span className="text-[10px] font-medium">{label}</span>
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+};

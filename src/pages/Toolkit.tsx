@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { PageHeader } from "@/components/PageHeader";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { EmergencySheet } from "@/components/EmergencySheet";
 import {
   Bus, Languages, Thermometer, HandCoins, Smartphone, Shield,
   ChevronDown, Utensils, Droplets, Hotel, Stethoscope, Wallet,
@@ -209,6 +210,7 @@ const tips: TipSection[] = [
 const Toolkit = () => {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [emergencyOpen, setEmergencyOpen] = useState(false);
 
   return (
     <div>
@@ -269,6 +271,19 @@ const Toolkit = () => {
           </div>
         </div>
       </div>
+
+      {/* Emergency SOS Button */}
+      <div className="px-5 mt-4">
+        <button
+          onClick={() => setEmergencyOpen(true)}
+          className="w-full flex items-center justify-center gap-2 bg-destructive text-destructive-foreground rounded-xl p-4 font-semibold text-sm min-h-[44px]"
+        >
+          <AlertTriangle className="w-5 h-5" />
+          SOS — Emergency Mode
+        </button>
+      </div>
+
+      <EmergencySheet open={emergencyOpen} onClose={() => setEmergencyOpen(false)} />
 
       <div className="h-8" />
     </div>

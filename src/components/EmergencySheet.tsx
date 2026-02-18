@@ -2,22 +2,7 @@ import { Phone, Copy, MapPin, AlertTriangle, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-
-const emergencyContacts = [
-  { key: "police", number: "19", icon: "🚔" },
-  { key: "ambulance", number: "15", icon: "🚑" },
-  { key: "fire", number: "15", icon: "🚒" },
-  { key: "tourist", number: "+212 524 384 601", icon: "🛡️" },
-];
-
-const emergencyPhrases = [
-  { en: "I need help!", ar: "عاونوني!", fr: "Aidez-moi !" },
-  { en: "Call the police", ar: "عيطو للبوليس", fr: "Appelez la police" },
-  { en: "I need a doctor", ar: "بغيت طبيب", fr: "J'ai besoin d'un médecin" },
-  { en: "Where is the hospital?", ar: "فين سبيطار?", fr: "Où est l'hôpital ?" },
-  { en: "I lost my passport", ar: "ضاع ليا الباسبور", fr: "J'ai perdu mon passeport" },
-  { en: "I've been robbed", ar: "سرقوني", fr: "J'ai été volé(e)" },
-];
+import { emergencyContacts, emergencyPhrases } from "@/data";
 
 interface Props {
   open: boolean;
@@ -36,7 +21,7 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
 
   const shareLocation = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos => {
+      navigator.geolocation.getCurrentPosition((pos) => {
         const msg = `I need help! My location: https://maps.google.com/?q=${pos.coords.latitude},${pos.coords.longitude}`;
         if (navigator.share) {
           navigator.share({ text: msg });
@@ -69,9 +54,14 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-destructive" />
-                  <h2 className="font-display text-xl font-bold text-foreground">{t('emergency.title')}</h2>
+                  <h2 className="font-display text-xl font-bold text-foreground">
+                    {t("emergency.title")}
+                  </h2>
                 </div>
-                <button onClick={onClose} className="p-2 rounded-full hover:bg-muted min-w-[44px] min-h-[44px] flex items-center justify-center">
+                <button
+                  onClick={onClose}
+                  className="p-2 rounded-full hover:bg-muted min-w-[44px] min-h-[44px] flex items-center justify-center"
+                >
                   <X className="w-5 h-5" />
                 </button>
               </div>
@@ -82,13 +72,21 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
                   <div key={key} className="flex items-center gap-3 bg-card rounded-xl p-3">
                     <span className="text-xl">{icon}</span>
                     <div className="flex-1">
-                      <p className="font-semibold text-sm text-foreground">{t(`emergency.${key}`)}</p>
+                      <p className="font-semibold text-sm text-foreground">
+                        {t(`emergency.${key}`)}
+                      </p>
                       <p className="text-xs text-muted-foreground">{number}</p>
                     </div>
-                    <a href={`tel:${number}`} className="p-2 rounded-full bg-destructive/10 min-w-[44px] min-h-[44px] flex items-center justify-center">
+                    <a
+                      href={`tel:${number}`}
+                      className="p-2 rounded-full bg-destructive/10 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                    >
                       <Phone className="w-4 h-4 text-destructive" />
                     </a>
-                    <button onClick={() => copy(number)} className="p-2 rounded-full bg-muted min-w-[44px] min-h-[44px] flex items-center justify-center">
+                    <button
+                      onClick={() => copy(number)}
+                      className="p-2 rounded-full bg-muted min-w-[44px] min-h-[44px] flex items-center justify-center"
+                    >
                       <Copy className="w-4 h-4 text-muted-foreground" />
                     </button>
                   </div>
@@ -101,11 +99,13 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
                 className="w-full flex items-center justify-center gap-2 bg-destructive text-destructive-foreground rounded-xl p-4 font-semibold text-sm min-h-[44px] mb-6"
               >
                 <MapPin className="w-4 h-4" />
-                {t('emergency.shareLocation')}
+                {t("emergency.shareLocation")}
               </button>
 
               {/* Emergency phrases */}
-              <h3 className="font-display text-base font-semibold mb-3 text-foreground">Emergency Phrases</h3>
+              <h3 className="font-display text-base font-semibold mb-3 text-foreground">
+                Emergency Phrases
+              </h3>
               <div className="space-y-2">
                 {emergencyPhrases.map((phrase, i) => (
                   <button
@@ -114,7 +114,9 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
                     className="w-full text-left bg-card rounded-lg p-3 min-h-[44px]"
                   >
                     <p className="text-sm font-medium text-foreground">{phrase.en}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{phrase.ar} · {phrase.fr}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      {phrase.ar} · {phrase.fr}
+                    </p>
                     {copied === `${phrase.en} / ${phrase.ar} / ${phrase.fr}` && (
                       <span className="text-xs text-secondary">Copied!</span>
                     )}

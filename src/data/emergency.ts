@@ -1,0 +1,17 @@
+import type { EmergencyContact, EmergencyPhrase } from "./types";
+
+export const emergencyContacts: EmergencyContact[] = [
+  { key: "police", number: "19", icon: "🚔" },
+  { key: "ambulance", number: "15", icon: "🚑" },
+  { key: "fire", number: "15", icon: "🚒" },
+  { key: "tourist", number: "+212 524 384 601", icon: "🛡️" },
+];
+
+export const emergencyPhrases: EmergencyPhrase[] = [
+  { en: "I need help!", ar: "عاونوني!", fr: "Aidez-moi !" },
+  { en: "Call the police", ar: "عيطو للبوليس", fr: "Appelez la police" },
+  { en: "I need a doctor", ar: "بغيت طبيب", fr: "J'ai besoin d'un médecin" },
+  { en: "Where is the hospital?", ar: "فين سبيطار?", fr: "Où est l'hôpital ?" },
+  { en: "I lost my passport", ar: "ضاع ليا الباسبور", fr: "J'ai perdu mon passeport" },
+  { en: "I've been robbed", ar: "سرقوني", fr: "J'ai été volé(e)" },
+];

@@ -83,15 +83,15 @@ const Index = () => {
           className="absolute bottom-0 left-0 right-0 p-6 pb-12"
         >
           <div className="flex items-center gap-1 mb-2">
-            <Star className="w-4 h-4 fill-gold text-gold drop-shadow-md" />
-            <span className="text-sand-light text-xs font-medium tracking-wide uppercase text-shadow-hero">
+            <Star className="w-4 h-4 fill-gold text-gold" />
+            <span className="text-white text-xs font-semibold tracking-wide uppercase">
               {t("home.tagline")}
             </span>
           </div>
-          <h1 className="font-display text-4xl font-bold text-white leading-tight text-shadow-hero">
+          <h1 className="font-display text-4xl font-bold text-white leading-tight">
             {t("home.title")}
           </h1>
-          <p className="text-sand-light mt-2 text-sm max-w-xs text-shadow-hero">{t("home.subtitle")}</p>
+          <p className="text-white mt-2 text-sm max-w-xs font-medium">{t("home.subtitle")}</p>
         </motion.div>
       </div>
 
@@ -101,6 +101,9 @@ const Index = () => {
           <div className="grid grid-cols-4 gap-3">
             {quickLinks.map(({ iconName, label, to, color }, i) => {
               const Icon = iconMap[iconName as keyof typeof iconMap];
+              const iconColor = iconName === "Map" 
+                ? "bg-indigo-100 text-indigo-600 dark:bg-indigo-500/20 dark:text-indigo-300" 
+                : color;
               return (
                 <motion.div
                   key={label}
@@ -110,7 +113,7 @@ const Index = () => {
                 >
                   <Link to={to} className="flex flex-col items-center gap-1.5">
                     <div
-                      className={`w-12 h-12 rounded-xl flex items-center justify-center ${color}`}
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center ${iconColor}`}
                     >
                       <Icon className="w-5 h-5" />
                     </div>

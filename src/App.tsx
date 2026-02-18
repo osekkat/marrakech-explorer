@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MobileLayout } from "./components/MobileLayout";
 import Index from "./pages/Index";
 import Picks from "./pages/Picks";
+import PickDetail from "./pages/PickDetail";
 import Explore from "./pages/Explore";
 import Toolkit from "./pages/Toolkit";
 import Maps from "./pages/Maps";
@@ -25,6 +26,7 @@ const App = () => (
           <Route element={<MobileLayout />}>
             <Route path="/" element={<Index />} />
             <Route path="/picks" element={<Picks />} />
+            <Route path="/picks/:id" element={<PickDetail />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/maps" element={<Maps />} />
             <Route path="/toolkit" element={<Toolkit />} />

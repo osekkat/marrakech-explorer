@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { PageHeader } from "@/components/PageHeader";
 import { Heart, Star, ChevronRight, Share2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import { useFavorites } from "@/hooks/useFavorites";
-import { picks, getPlaceById, uiStrings } from "@/data";
+import { picks, getPlaceById } from "@/data";
 import { images, type ImageKey } from "@/data/images";
 import type { Pick } from "@/data";
 
@@ -25,7 +25,7 @@ const categoryEmoji: Record<string, string> = {
 
 const Picks = () => {
   const { t } = useTranslation();
-  const [expanded, setExpanded] = useState<string | null>(null);
+  const navigate = useNavigate();
   const { toggle, isFavorite } = useFavorites("picks-favorites");
 
   const share = (pick: Pick) => {
@@ -66,10 +66,10 @@ const Picks = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.06 }}
-              className="bg-card rounded-xl overflow-hidden shadow-card"
+              className="bg-card rounded-xl overflow-hidden shadow-lg border border-border/50"
             >
               <button
-                onClick={() => setExpanded(expanded === pick.id ? null : pick.id)}
+                onClick={() => navigate(`/picks/${pick.id}`)}
                 className="w-full text-left"
               >
                 <div className="relative h-48 bg-muted overflow-hidden">
@@ -103,13 +103,16 @@ const Picks = () => {
               </button>
 
               <div className="p-4">
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between">
                   <p className="text-muted-foreground text-sm leading-relaxed flex-1 line-clamp-2">
                     {pick.whyWeLoveIt}
                   </p>
                   <div className="flex gap-1 ml-2">
                     <button
-                      onClick={() => toggle(pick.id)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggle(pick.id);
+                      }}
                       className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
                     >
                       <Heart
@@ -121,7 +124,10 @@ const Picks = () => {
                       />
                     </button>
                     <button
-                      onClick={() => share(pick)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        share(pick);
+                      }}
                       className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
                     >
                       <Share2 className="w-4 h-4 text-muted-foreground" />
@@ -129,46 +135,12 @@ const Picks = () => {
                   </div>
                 </div>
 
-                {expanded === pick.id && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    className="mt-3 pt-3 border-t border-border"
-                  >
-                    <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                      {t("picks.whyWeLove")}
-                    </h4>
-                    <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                      {pick.whyWeLoveIt}
-                    </p>
-                    {placeInfo.tips.length > 0 && (
-                      <>
-                        <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                          {t("picks.tips")}
-                        </h4>
-                        <div className="space-y-1.5">
-                          {placeInfo.tips.map((tip, j) => (
-                            <div key={j} className="flex gap-2 items-start">
-                              <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 flex-shrink-0" />
-                              <p className="text-xs text-foreground/70">{tip}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                  </motion.div>
-                )}
-
                 <button
-                  onClick={() => setExpanded(expanded === pick.id ? null : pick.id)}
+                  onClick={() => navigate(`/picks/${pick.id}`)}
                   className="flex items-center gap-1 mt-2 text-xs text-primary font-medium min-h-[44px]"
                 >
-                  {expanded === pick.id ? uiStrings.showLess : uiStrings.readMore}
-                  <ChevronRight
-                    className={`w-3 h-3 transition-transform ${
-                      expanded === pick.id ? "rotate-90" : ""
-                    }`}
-                  />
+                  {t("picks.readMore", "Read more")}
+                  <ChevronRight className="w-3 h-3" />
                 </button>
               </div>
             </motion.div>

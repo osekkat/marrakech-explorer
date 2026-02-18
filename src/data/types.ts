@@ -201,6 +201,11 @@ export interface Pick {
   whyWeLoveIt: string;
   imageUrl?: string;
   imageKey?: string;
+  introduction?: string;
+  details?: string;
+  quickBreak?: string;
+  planningTip?: string;
+  websiteUrl?: string;
 }
 
 // ============================================================================

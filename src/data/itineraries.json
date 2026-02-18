@@ -16,7 +16,7 @@
       "iconName": "Map",
       "label": "Explore",
       "to": "/explore",
-      "color": "bg-accent/20 text-accent-foreground"
+      "color": "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
       "iconName": "Lightbulb",

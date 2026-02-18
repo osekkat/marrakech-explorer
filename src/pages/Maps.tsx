@@ -16,8 +16,13 @@ import {
   TreePalm,
   ShoppingBag,
   Droplets,
-  Mountain,
   Coffee,
+  Palette,
+  Building,
+  Home,
+  Store,
+  Sparkles,
+  Castle,
 } from "lucide-react";
 import { pois, categoryConfig, uiStrings } from "@/data";
 import type { POI } from "@/data";
@@ -31,12 +36,17 @@ const iconMap = {
   TreePalm,
   ShoppingBag,
   Droplets,
-  Mountain,
+  Palette,
+  Building,
+  Home,
+  Store,
+  Sparkles,
+  Castle,
 } as const;
 
 const Maps = () => {
   const { t } = useTranslation();
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("all");
   const [search, setSearch] = useState("");
   const [selectedPoi, setSelectedPoi] = useState<POI | null>(null);
   const [mapStyle, setMapStyle] = useState<"streets" | "satellite">("streets");
@@ -44,7 +54,7 @@ const Maps = () => {
 
   const filtered = useMemo(() => {
     let result = pois;
-    if (activeCategory !== "All") result = result.filter((p) => p.category === activeCategory);
+    if (activeCategory !== "all") result = result.filter((p) => p.category === activeCategory);
     if (search) {
       const q = search
         .toLowerCase()
@@ -72,6 +82,23 @@ const Maps = () => {
   const getCategoryIcon = (cat: string) => {
     const cfg = categoryConfig.find((c) => c.key === cat);
     return iconMap[cfg?.iconName as keyof typeof iconMap] || MapPin;
+  };
+
+  const categoryLabels: Record<string, string> = {
+    all: "All",
+    restaurant: "Restaurants",
+    cafe: "Cafés",
+    museum: "Museums",
+    gallery: "Galleries",
+    riad: "Riads",
+    hotel: "Hotels",
+    garden: "Gardens",
+    courtyard: "Courtyards",
+    shopping: "Shopping",
+    souk: "Souks",
+    hammam: "Hammams",
+    spa: "Spas",
+    monument: "Monuments",
   };
 
   return (
@@ -178,10 +205,12 @@ const Maps = () => {
                     <MapPin className="w-3 h-3" />
                     {selectedPoi.area}
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-primary">
-                    <Star className="w-3 h-3 fill-primary" />
-                    {selectedPoi.rating}
-                  </span>
+                  {selectedPoi.rating > 0 && (
+                    <span className="flex items-center gap-1 text-xs text-primary">
+                      <Star className="w-3 h-3 fill-primary" />
+                      {selectedPoi.rating}
+                    </span>
+                  )}
                 </div>
                 <p className="text-xs text-muted-foreground mt-1.5 leading-relaxed">
                   {selectedPoi.description}
@@ -247,7 +276,7 @@ const Maps = () => {
                   }`}
                 >
                   <Icon className="w-3 h-3" />
-                  {key}
+                  {categoryLabels[key] ?? key}
                 </button>
               );
             })}
@@ -281,10 +310,12 @@ const Maps = () => {
                     <h4 className="text-sm font-medium text-foreground truncate">{poi.name}</h4>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[10px] text-muted-foreground">{poi.area}</span>
-                      <span className="flex items-center gap-0.5 text-[10px] text-primary">
-                        <Star className="w-2.5 h-2.5 fill-primary" />
-                        {poi.rating}
-                      </span>
+                      {poi.rating > 0 && (
+                        <span className="flex items-center gap-0.5 text-[10px] text-primary">
+                          <Star className="w-2.5 h-2.5 fill-primary" />
+                          {poi.rating}
+                        </span>
+                      )}
                     </div>
                   </div>
                   <Heart

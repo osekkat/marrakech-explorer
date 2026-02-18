@@ -2,195 +2,123 @@
   "picks": [
     {
       "id": "ben-youssef-medersa",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "ben-youssef",
+      "locale": "en",
       "title": "Ben Youssef Medersa",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "Once the largest Islamic college in Morocco, this 14th-century masterpiece features stunning zellige tilework, carved stucco, and cedar wood carvings. The central courtyard with its reflecting pool is pure architectural poetry.",
-      "tips": [
-        "Entry: 70 MAD",
-        "Visit early morning for best photos",
-        "Allow 1-1.5 hours",
-        "Combined ticket with nearby museums available"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.9,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "Once the largest Islamic college in Morocco, this 14th-century masterpiece features stunning zellige tilework, carved stucco, and cedar wood carvings. The central courtyard with its reflecting pool is pure architectural poetry.",
+      "images": ["images/places/ben-youssef-1"]
     },
     {
       "id": "koutoubia",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "koutoubia",
+      "locale": "en",
       "title": "Koutoubia Mosque",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "The iconic 12th-century minaret dominates Marrakech's skyline and inspired the Giralda in Seville. While non-Muslims can't enter, the surrounding gardens are perfect for a sunset stroll with views of the Atlas Mountains.",
-      "tips": [
-        "Free to visit the gardens",
-        "Best photos at sunset",
-        "Minaret is illuminated at night",
-        "Non-Muslims cannot enter the mosque"
-      ],
-      "imageKey": "jemaa",
-      "rating": 4.8,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "The iconic 12th-century minaret dominates Marrakech's skyline and inspired the Giralda in Seville. While non-Muslims can't enter, the surrounding gardens are perfect for a sunset stroll with views of the Atlas Mountains.",
+      "images": ["images/places/koutoubia-1"]
     },
     {
       "id": "badi-palace",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "badi-palace",
+      "locale": "en",
       "title": "Badi Palace",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "The atmospheric ruins of Sultan Ahmad al-Mansur's 16th-century palace, once called 'The Incomparable'. Storks nest in the crumbling walls, and the vast sunken gardens hint at past grandeur. The underground prison is hauntingly atmospheric.",
-      "tips": [
-        "Entry: 70 MAD",
-        "Visit late afternoon for golden light",
-        "Climb the walls for panoramic views",
-        "Watch for nesting storks in spring"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.6,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "The atmospheric ruins of Sultan Ahmad al-Mansur's 16th-century palace, once called 'The Incomparable'. Storks nest in the crumbling walls, and the vast sunken gardens hint at past grandeur. The underground prison is hauntingly atmospheric.",
+      "images": ["images/places/badi-palace-1"]
     },
     {
       "id": "almoravid-koubba",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "almoravid-koubba",
+      "locale": "en",
       "title": "Almoravid Koubba",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "The only surviving structure from the Almoravid dynasty (12th century), this small ablutions pavilion is a treasure of early Moroccan architecture. The intricate carved dome and arches showcase the origins of Marrakech's architectural legacy.",
-      "tips": [
-        "Entry: 20 MAD",
-        "Often overlooked by tourists",
-        "Just 15 minutes needed",
-        "Near Ben Youssef Medersa"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.4,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "The only surviving structure from the Almoravid dynasty (12th century), this small ablutions pavilion is a treasure of early Moroccan architecture. The intricate carved dome and arches showcase the origins of Marrakech's architectural legacy.",
+      "images": ["images/places/almoravid-koubba-1"]
     },
     {
       "id": "saadian-tombs",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "saadian-tombs",
+      "locale": "en",
       "title": "Saadian Tombs",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "Sealed for centuries and rediscovered in 1917, these ornate 16th-century royal tombs feature Italian Carrara marble, gilded honeycomb ceilings, and exquisite zellige. The Hall of Twelve Columns is breathtakingly beautiful.",
-      "tips": [
-        "Entry: 70 MAD",
-        "Visit at opening (9am) to avoid queues",
-        "Allow 30-45 minutes",
-        "Photography allowed inside"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.7,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "Sealed for centuries and rediscovered in 1917, these ornate 16th-century royal tombs feature Italian Carrara marble, gilded honeycomb ceilings, and exquisite zellige. The Hall of Twelve Columns is breathtakingly beautiful.",
+      "images": ["images/places/saadian-tombs-1"]
     },
     {
       "id": "bahia-palace",
-      "category": "🏛️ Best Architectural Experience",
+      "category": "architecture",
+      "placeId": "bahia",
+      "locale": "en",
       "title": "Bahia Palace",
-      "subtitle": "Best Architectural Experience",
-      "whyWeLove": "A breathtaking testament to Moroccan craftsmanship — intricate zellige tile work, carved cedar ceilings, and tranquil courtyards create an atmosphere of timeless beauty. Don't miss the harem quarters with painted wooden ceilings.",
-      "tips": [
-        "Visit early morning to avoid crowds",
-        "Entry: 70 MAD",
-        "Allow 1–2 hours",
-        "Photography is allowed"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.8,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Architectural Experience",
+      "whyWeLoveIt": "A breathtaking testament to Moroccan craftsmanship — intricate zellige tile work, carved cedar ceilings, and tranquil courtyards create an atmosphere of timeless beauty. Don't miss the harem quarters with painted wooden ceilings.",
+      "images": ["images/places/bahia-1"]
     },
     {
       "id": "centre-femme-artisane",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "centre-femme-artisane",
+      "locale": "en",
       "title": "Centre de la Femme Artisane",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "A women's cooperative showcasing authentic Moroccan handicrafts at fixed prices. Support local artisans directly while finding beautiful carpets, embroidery, leather goods, and textiles — all made by skilled Moroccan women.",
-      "tips": [
-        "Fixed prices, no bargaining needed",
-        "Quality guaranteed",
-        "Great for ethical souvenirs",
-        "Located near Bab Doukkala"
-      ],
-      "imageKey": "spice",
-      "rating": 4.7,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "A women's cooperative showcasing authentic Moroccan handicrafts at fixed prices. Support local artisans directly while finding beautiful carpets, embroidery, leather goods, and textiles — all made by skilled Moroccan women.",
+      "images": ["images/places/centre-femme-artisane-1"]
     },
     {
       "id": "mustapha-blaoui",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "mustapha-blaoui",
+      "locale": "en",
       "title": "Mustapha Blaoui",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "A legendary warehouse packed floor-to-ceiling with Moroccan treasures — lanterns, furniture, ceramics, textiles, and antiques. Interior designers fly in from around the world to source here. Overwhelming in the best way.",
-      "tips": [
-        "Bring measurements for furniture",
-        "Shipping available worldwide",
-        "Prices are negotiable",
-        "Allow at least an hour to explore"
-      ],
-      "imageKey": "spice",
-      "rating": 4.8,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "A legendary warehouse packed floor-to-ceiling with Moroccan treasures — lanterns, furniture, ceramics, textiles, and antiques. Interior designers fly in from around the world to source here. Overwhelming in the best way.",
+      "images": ["images/places/mustapha-blaoui-1"]
     },
     {
       "id": "les-nomades",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "les-nomades",
+      "locale": "en",
       "title": "Les Nomades de Marrakech",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "A beautifully curated boutique in the medina specializing in Berber carpets, vintage textiles, and nomadic tribal art. Each piece has a story, and the knowledgeable staff share the cultural heritage behind every item.",
-      "tips": [
-        "Ask about carpet origins and meanings",
-        "High quality but prices reflect it",
-        "Shipping can be arranged",
-        "Near Musée de Marrakech"
-      ],
-      "imageKey": "spice",
-      "rating": 4.6,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "A beautifully curated boutique in the medina specializing in Berber carpets, vintage textiles, and nomadic tribal art. Each piece has a story, and the knowledgeable staff share the cultural heritage behind every item.",
+      "images": ["images/places/les-nomades-1"]
     },
     {
       "id": "jardin-majorelle-shop",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "majorelle",
+      "locale": "en",
       "title": "Jardin Majorelle Boutique",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "The garden's boutique offers exquisite YSL-inspired designs, Majorelle blue ceramics, and curated Moroccan crafts. While pricier than the souks, the quality and design are impeccable — perfect for special gifts.",
-      "tips": [
-        "Included with garden entry (100 MAD)",
-        "Beautiful YSL-branded items",
-        "Less crowded in late afternoon",
-        "Credit cards accepted"
-      ],
-      "imageKey": "bahia",
-      "rating": 4.5,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "The garden's boutique offers exquisite YSL-inspired designs, Majorelle blue ceramics, and curated Moroccan crafts. While pricier than the souks, the quality and design are impeccable — perfect for special gifts.",
+      "images": ["images/places/majorelle-boutique-1"]
     },
     {
       "id": "naturom",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "naturom",
+      "locale": "en",
       "title": "Naturom",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "Morocco's answer to organic beauty — argan oil, black soap, ghassoul clay, and rose water straight from local cooperatives. Learn about traditional beauty rituals and take home authentic hammam products.",
-      "tips": [
-        "Ask for product demonstrations",
-        "Pure argan oil should smell nutty",
-        "Fixed prices",
-        "Multiple locations in medina"
-      ],
-      "imageKey": "mintTea",
-      "rating": 4.6,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "Morocco's answer to organic beauty — argan oil, black soap, ghassoul clay, and rose water straight from local cooperatives. Learn about traditional beauty rituals and take home authentic hammam products.",
+      "images": ["images/places/naturom-1"]
     },
     {
       "id": "rahba-kedima",
-      "category": "🛍️ Best Shopping Experience",
+      "category": "shopping",
+      "placeId": "rahba-kedima",
+      "locale": "en",
       "title": "Rahba Kedima",
-      "subtitle": "Best Shopping Experience",
-      "whyWeLove": "The 'Old Square' is Marrakech's most atmospheric marketplace — apothecary stalls selling spices, dried herbs, traditional remedies, and yes, chameleons. The surrounding carpet dealers and basket weavers add to the sensory overload.",
-      "tips": [
-        "Best in the morning",
-        "Great for spices and herbs",
-        "Bargain hard here",
-        "Watch out for persistent sellers"
-      ],
-      "imageKey": "spice",
-      "rating": 4.5,
-      "lastVerifiedAt": "2026-02-15"
+      "tagline": "Best Shopping Experience",
+      "whyWeLoveIt": "The 'Old Square' is Marrakech's most atmospheric marketplace — apothecary stalls selling spices, dried herbs, traditional remedies, and yes, chameleons. The surrounding carpet dealers and basket weavers add to the sensory overload.",
+      "images": ["images/places/rahba-kedima-1"]
     }
   ]
 }

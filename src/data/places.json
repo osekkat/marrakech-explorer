@@ -1,261 +1,1045 @@
 {
-  "categories": ["All", "Restaurants", "Cafés", "Museums", "Riads", "Gardens", "Shopping", "Hammams", "Day Trips"],
-  "neighborhoods": ["All", "Medina", "Gueliz", "Hivernage", "Mellah", "Palmeraie", "Kasbah"],
-  "places": [
+  "categories": [
+    "restaurant",
+    "cafe",
+    "museum",
+    "gallery",
+    "riad",
+    "hotel",
+    "garden",
+    "courtyard",
+    "shopping",
+    "souk",
+    "hammam",
+    "spa",
+    "monument"
+  ],
+  "neighborhoods": ["Medina", "Gueliz", "Hivernage", "Mellah", "Palmeraie", "Kasbah"],
+  "placesBase": [
     {
       "id": "nomad",
-      "name": "Nomad",
-      "category": "Restaurants",
-      "area": "Medina",
-      "price": "$$",
+      "slug": "nomad-restaurant",
+      "category": "restaurant",
+      "coordinates": { "lat": 31.629, "lng": -7.987 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
       "rating": 4.7,
-      "description": "Modern Moroccan cuisine with stunning rooftop views over the souks."
+      "images": [
+        {
+          "basePath": "images/places/nomad-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "12:00", "end": "23:00" }],
+          "tue": [{ "start": "12:00", "end": "23:00" }],
+          "wed": [{ "start": "12:00", "end": "23:00" }],
+          "thu": [{ "start": "12:00", "end": "23:00" }],
+          "fri": [{ "start": "12:00", "end": "23:00" }],
+          "sat": [{ "start": "12:00", "end": "23:00" }],
+          "sun": [{ "start": "12:00", "end": "23:00" }]
+        }
+      },
+      "contacts": {
+        "phone": "+212 524 381 232",
+        "website": "https://www.nomadmarrakech.com"
+      },
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "le-jardin",
-      "name": "Le Jardin",
-      "category": "Restaurants",
-      "area": "Medina",
-      "price": "$$",
+      "slug": "le-jardin-restaurant",
+      "category": "restaurant",
+      "coordinates": { "lat": 31.6305, "lng": -7.9855 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
       "rating": 4.6,
-      "description": "Hidden garden restaurant serving fresh, contemporary Moroccan dishes."
+      "images": [
+        {
+          "basePath": "images/places/le-jardin-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "al-fassia",
-      "name": "Al Fassia",
-      "category": "Restaurants",
-      "area": "Gueliz",
-      "price": "$$$",
+      "slug": "al-fassia-restaurant",
+      "category": "restaurant",
+      "coordinates": { "lat": 31.6345, "lng": -8.0123 },
+      "neighborhood": "Gueliz",
+      "priceRange": 3,
       "rating": 4.8,
-      "description": "Women-run institution serving the best traditional Moroccan cuisine in town."
+      "images": [
+        {
+          "basePath": "images/places/al-fassia-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "la-mamounia",
-      "name": "La Mamounia Restaurant",
-      "category": "Restaurants",
-      "area": "Hivernage",
-      "price": "$$$$",
+      "slug": "la-mamounia-restaurant",
+      "category": "restaurant",
+      "coordinates": { "lat": 31.6198, "lng": -7.9965 },
+      "neighborhood": "Hivernage",
+      "priceRange": 4,
       "rating": 4.9,
-      "description": "Legendary palace hotel restaurant — fine Moroccan dining at its most opulent."
+      "images": [
+        {
+          "basePath": "images/places/la-mamounia-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "cafe-epices",
-      "name": "Café des Épices",
-      "category": "Cafés",
-      "area": "Medina",
-      "price": "$",
+      "slug": "cafe-des-epices",
+      "category": "cafe",
+      "coordinates": { "lat": 31.631, "lng": -7.986 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.5,
-      "description": "Iconic square-side café perfect for people-watching with fresh juices.",
-      "familyFriendly": true
+      "images": [
+        {
+          "basePath": "images/places/cafe-epices-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "accessibilityTags": ["family-friendly"],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "cafe-clock",
-      "name": "Café Clock",
-      "category": "Cafés",
-      "area": "Kasbah",
-      "price": "$",
+      "slug": "cafe-clock",
+      "category": "cafe",
+      "coordinates": { "lat": 31.6195, "lng": -7.9878 },
+      "neighborhood": "Kasbah",
+      "priceRange": 1,
       "rating": 4.6,
-      "description": "Cultural hub famous for its camel burger and storytelling nights."
+      "images": [
+        {
+          "basePath": "images/places/cafe-clock-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "bacha",
-      "name": "BACHA Coffee",
-      "category": "Cafés",
-      "area": "Medina",
-      "price": "$$",
+      "slug": "bacha-coffee",
+      "category": "cafe",
+      "coordinates": { "lat": 31.6318, "lng": -7.9845 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
       "rating": 4.7,
-      "description": "Luxurious coffee house in a restored palace — over 200 coffees to choose from."
+      "images": [
+        {
+          "basePath": "images/places/bacha-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "grand-cafe",
-      "name": "Grand Café de la Poste",
-      "category": "Cafés",
-      "area": "Gueliz",
-      "price": "$$",
+      "slug": "grand-cafe-de-la-poste",
+      "category": "cafe",
+      "coordinates": { "lat": 31.6342, "lng": -8.0098 },
+      "neighborhood": "Gueliz",
+      "priceRange": 2,
       "rating": 4.5,
-      "description": "Colonial-era café with art deco interiors and a lovely garden terrace."
+      "images": [
+        {
+          "basePath": "images/places/grand-cafe-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "bahia",
-      "name": "Bahia Palace",
-      "category": "Museums",
-      "area": "Medina",
-      "price": "$",
+      "slug": "bahia-palace",
+      "category": "monument",
+      "coordinates": { "lat": 31.6217, "lng": -7.9832 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.8,
-      "hours": "9:00–17:00",
-      "description": "19th-century palace showcasing the finest Moroccan architectural artistry.",
-      "familyFriendly": true
+      "images": [
+        {
+          "basePath": "images/places/bahia-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:00", "end": "17:00" }],
+          "tue": [{ "start": "09:00", "end": "17:00" }],
+          "wed": [{ "start": "09:00", "end": "17:00" }],
+          "thu": [{ "start": "09:00", "end": "17:00" }],
+          "fri": [{ "start": "09:00", "end": "17:00" }],
+          "sat": [{ "start": "09:00", "end": "17:00" }],
+          "sun": [{ "start": "09:00", "end": "17:00" }]
+        }
+      },
+      "accessibilityTags": ["family-friendly"],
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "ysl",
-      "name": "Musée Yves Saint Laurent",
-      "category": "Museums",
-      "area": "Gueliz",
-      "price": "$$",
+      "slug": "musee-yves-saint-laurent",
+      "category": "museum",
+      "coordinates": { "lat": 31.6418, "lng": -8.003 },
+      "neighborhood": "Gueliz",
+      "priceRange": 2,
       "rating": 4.7,
-      "hours": "10:00–18:00",
-      "description": "Striking terracotta museum dedicated to YSL's love affair with Marrakech."
+      "images": [
+        {
+          "basePath": "images/places/ysl-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "10:00", "end": "18:00" }],
+          "tue": [{ "start": "10:00", "end": "18:00" }],
+          "thu": [{ "start": "10:00", "end": "18:00" }],
+          "fri": [{ "start": "10:00", "end": "18:00" }],
+          "sat": [{ "start": "10:00", "end": "18:00" }],
+          "sun": [{ "start": "10:00", "end": "18:00" }]
+        }
+      },
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "photo",
-      "name": "Maison de la Photographie",
-      "category": "Museums",
-      "area": "Medina",
-      "price": "$",
+      "slug": "maison-de-la-photographie",
+      "category": "museum",
+      "coordinates": { "lat": 31.6335, "lng": -7.9852 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.5,
-      "hours": "9:30–19:00",
-      "description": "Fascinating collection of vintage Moroccan photography with rooftop café."
+      "images": [
+        {
+          "basePath": "images/places/photo-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:30", "end": "19:00" }],
+          "tue": [{ "start": "09:30", "end": "19:00" }],
+          "wed": [{ "start": "09:30", "end": "19:00" }],
+          "thu": [{ "start": "09:30", "end": "19:00" }],
+          "fri": [{ "start": "09:30", "end": "19:00" }],
+          "sat": [{ "start": "09:30", "end": "19:00" }],
+          "sun": [{ "start": "09:30", "end": "19:00" }]
+        }
+      },
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "dar-si-said",
-      "name": "Dar Si Said Museum",
-      "category": "Museums",
-      "area": "Medina",
-      "price": "$",
+      "slug": "dar-si-said-museum",
+      "category": "museum",
+      "coordinates": { "lat": 31.6225, "lng": -7.9828 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.4,
-      "hours": "9:00–17:00",
-      "description": "National museum of weaving with stunning woodwork and textile collections."
+      "images": [
+        {
+          "basePath": "images/places/dar-si-said-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:00", "end": "17:00" }],
+          "tue": [{ "start": "09:00", "end": "17:00" }],
+          "wed": [{ "start": "09:00", "end": "17:00" }],
+          "thu": [{ "start": "09:00", "end": "17:00" }],
+          "fri": [{ "start": "09:00", "end": "17:00" }],
+          "sat": [{ "start": "09:00", "end": "17:00" }],
+          "sun": [{ "start": "09:00", "end": "17:00" }]
+        }
+      },
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "ben-youssef",
-      "name": "Ben Youssef Madrasa",
-      "category": "Museums",
-      "area": "Medina",
-      "price": "$",
+      "slug": "ben-youssef-madrasa",
+      "category": "monument",
+      "coordinates": { "lat": 31.634, "lng": -7.985 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.8,
-      "hours": "9:00–18:00",
-      "description": "Largest Islamic college in Morocco with breathtaking carved stucco and cedar."
+      "images": [
+        {
+          "basePath": "images/places/ben-youssef-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:00", "end": "18:00" }],
+          "tue": [{ "start": "09:00", "end": "18:00" }],
+          "wed": [{ "start": "09:00", "end": "18:00" }],
+          "thu": [{ "start": "09:00", "end": "18:00" }],
+          "fri": [{ "start": "09:00", "end": "18:00" }],
+          "sat": [{ "start": "09:00", "end": "18:00" }],
+          "sun": [{ "start": "09:00", "end": "18:00" }]
+        }
+      },
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "riad-yasmine",
-      "name": "Riad Yasmine",
-      "category": "Riads",
-      "area": "Medina",
-      "price": "$$$",
+      "slug": "riad-yasmine",
+      "category": "riad",
+      "coordinates": { "lat": 31.63, "lng": -7.984 },
+      "neighborhood": "Medina",
+      "priceRange": 3,
       "rating": 4.9,
-      "description": "Instagram-famous riad with a stunning turquoise plunge pool and zellige tiles."
+      "images": [
+        {
+          "basePath": "images/places/riad-yasmine-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "contacts": {
+        "website": "https://www.riadyasmine.com"
+      },
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "el-fenn",
-      "name": "El Fenn",
-      "category": "Riads",
-      "area": "Medina",
-      "price": "$$$$",
+      "slug": "el-fenn",
+      "category": "riad",
+      "coordinates": { "lat": 31.6295, "lng": -7.9862 },
+      "neighborhood": "Medina",
+      "priceRange": 4,
       "rating": 4.8,
-      "description": "Boutique luxury riad with rooftop pool, art collection, and impeccable design."
+      "images": [
+        {
+          "basePath": "images/places/el-fenn-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "contacts": {
+        "website": "https://www.el-fenn.com"
+      },
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "la-sultana",
-      "name": "La Sultana",
-      "category": "Riads",
-      "area": "Kasbah",
-      "price": "$$$$",
+      "slug": "la-sultana",
+      "category": "riad",
+      "coordinates": { "lat": 31.6185, "lng": -7.9895 },
+      "neighborhood": "Kasbah",
+      "priceRange": 4,
       "rating": 4.9,
-      "description": "Five-star riad-hotel with award-winning spa and incredible rooftop views."
+      "images": [
+        {
+          "basePath": "images/places/la-sultana-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "majorelle",
-      "name": "Jardin Majorelle",
-      "category": "Gardens",
-      "area": "Gueliz",
-      "price": "$$",
+      "slug": "jardin-majorelle",
+      "category": "garden",
+      "coordinates": { "lat": 31.6415, "lng": -8.0032 },
+      "neighborhood": "Gueliz",
+      "priceRange": 2,
       "rating": 4.7,
-      "hours": "8:00–18:00",
-      "description": "Electric-blue botanical garden created by Jacques Majorelle, restored by YSL.",
-      "familyFriendly": true
+      "images": [
+        {
+          "basePath": "images/places/majorelle-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "08:00", "end": "18:00" }],
+          "tue": [{ "start": "08:00", "end": "18:00" }],
+          "wed": [{ "start": "08:00", "end": "18:00" }],
+          "thu": [{ "start": "08:00", "end": "18:00" }],
+          "fri": [{ "start": "08:00", "end": "18:00" }],
+          "sat": [{ "start": "08:00", "end": "18:00" }],
+          "sun": [{ "start": "08:00", "end": "18:00" }]
+        }
+      },
+      "accessibilityTags": ["family-friendly"],
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "secret",
-      "name": "Le Jardin Secret",
-      "category": "Gardens",
-      "area": "Medina",
-      "price": "$",
+      "slug": "le-jardin-secret",
+      "category": "garden",
+      "coordinates": { "lat": 31.633, "lng": -7.987 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.5,
-      "hours": "9:30–18:30",
-      "description": "Hidden Islamic garden in the medina with a tower offering panoramic views.",
-      "familyFriendly": true
+      "images": [
+        {
+          "basePath": "images/places/secret-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:30", "end": "18:30" }],
+          "tue": [{ "start": "09:30", "end": "18:30" }],
+          "wed": [{ "start": "09:30", "end": "18:30" }],
+          "thu": [{ "start": "09:30", "end": "18:30" }],
+          "fri": [{ "start": "09:30", "end": "18:30" }],
+          "sat": [{ "start": "09:30", "end": "18:30" }],
+          "sun": [{ "start": "09:30", "end": "18:30" }]
+        }
+      },
+      "accessibilityTags": ["family-friendly"],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "agdal",
-      "name": "Agdal Gardens",
-      "category": "Gardens",
-      "area": "Hivernage",
-      "price": "Free",
+      "slug": "agdal-gardens",
+      "category": "garden",
+      "coordinates": { "lat": 31.6095, "lng": -7.9835 },
+      "neighborhood": "Hivernage",
       "rating": 4.2,
-      "description": "Vast royal gardens with olive, orange, and pomegranate orchards. Open Fri & Sun."
+      "images": [
+        {
+          "basePath": "images/places/agdal-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "fri": [{ "start": "08:00", "end": "18:00" }],
+          "sun": [{ "start": "08:00", "end": "18:00" }]
+        },
+        "notes": "Open only on Friday and Sunday"
+      },
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "souk-semmarine",
-      "name": "Souk Semmarine",
-      "category": "Shopping",
-      "area": "Medina",
-      "price": "$–$$$",
+      "slug": "souk-semmarine",
+      "category": "souk",
+      "coordinates": { "lat": 31.632, "lng": -7.988 },
+      "neighborhood": "Medina",
       "rating": 4.4,
-      "description": "The main souk artery — textiles, ceramics, leather, and everything in between."
+      "images": [
+        {
+          "basePath": "images/places/souk-semmarine-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "33-rue",
-      "name": "33 Rue Majorelle",
-      "category": "Shopping",
-      "area": "Gueliz",
-      "price": "$$",
+      "slug": "33-rue-majorelle",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6408, "lng": -8.0025 },
+      "neighborhood": "Gueliz",
+      "priceRange": 2,
       "rating": 4.6,
-      "description": "Curated concept store with contemporary Moroccan design and fashion."
+      "images": [
+        {
+          "basePath": "images/places/33-rue-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "tanneries",
-      "name": "Chouara Tanneries",
-      "category": "Shopping",
-      "area": "Medina",
-      "price": "Free",
+      "slug": "chouara-tanneries",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6378, "lng": -7.9802 },
+      "neighborhood": "Medina",
       "rating": 4.3,
-      "description": "Ancient leather tanneries — bring mint to hold under your nose!"
+      "images": [
+        {
+          "basePath": "images/places/tanneries-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "heritage-spa",
-      "name": "Heritage Spa",
-      "category": "Hammams",
-      "area": "Medina",
-      "price": "$$$",
+      "slug": "heritage-spa",
+      "category": "hammam",
+      "coordinates": { "lat": 31.628, "lng": -7.985 },
+      "neighborhood": "Medina",
+      "priceRange": 3,
       "rating": 4.8,
-      "description": "Luxurious traditional hammam with marble interiors and expert therapists."
+      "images": [
+        {
+          "basePath": "images/places/heritage-spa-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
       "id": "hammam-mouassine",
-      "name": "Hammam Mouassine",
-      "category": "Hammams",
-      "area": "Medina",
-      "price": "$",
+      "slug": "hammam-mouassine",
+      "category": "hammam",
+      "coordinates": { "lat": 31.6312, "lng": -7.9868 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
       "rating": 4.3,
-      "description": "Authentic public hammam — the real local experience."
+      "images": [
+        {
+          "basePath": "images/places/hammam-mouassine-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
-      "id": "atlas",
-      "name": "Atlas Mountains Day Trip",
-      "category": "Day Trips",
-      "area": "Outside",
-      "price": "$$",
+      "id": "koutoubia",
+      "slug": "koutoubia-mosque",
+      "category": "monument",
+      "coordinates": { "lat": 31.6238, "lng": -7.9938 },
+      "neighborhood": "Medina",
       "rating": 4.8,
-      "description": "Visit Berber villages, Ourika Valley waterfalls, and breathtaking mountain views."
+      "images": [
+        {
+          "basePath": "images/places/koutoubia-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "featured": true,
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
     },
     {
-      "id": "essaouira",
-      "name": "Essaouira Day Trip",
-      "category": "Day Trips",
-      "area": "Outside",
-      "price": "$$",
-      "rating": 4.7,
-      "description": "Charming coastal town 3hrs away — art, seafood, Portuguese ramparts, and surf."
-    },
-    {
-      "id": "ouzoud",
-      "name": "Ouzoud Waterfalls",
-      "category": "Day Trips",
-      "area": "Outside",
-      "price": "$$",
+      "id": "badi-palace",
+      "slug": "badi-palace",
+      "category": "monument",
+      "coordinates": { "lat": 31.6175, "lng": -7.9845 },
+      "neighborhood": "Kasbah",
+      "priceRange": 1,
       "rating": 4.6,
-      "description": "Morocco's most spectacular waterfalls with Barbary macaques and hiking trails.",
-      "familyFriendly": true
+      "images": [
+        {
+          "basePath": "images/places/badi-palace-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:00", "end": "17:00" }],
+          "tue": [{ "start": "09:00", "end": "17:00" }],
+          "wed": [{ "start": "09:00", "end": "17:00" }],
+          "thu": [{ "start": "09:00", "end": "17:00" }],
+          "fri": [{ "start": "09:00", "end": "17:00" }],
+          "sat": [{ "start": "09:00", "end": "17:00" }],
+          "sun": [{ "start": "09:00", "end": "17:00" }]
+        }
+      },
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "almoravid-koubba",
+      "slug": "almoravid-koubba",
+      "category": "monument",
+      "coordinates": { "lat": 31.6338, "lng": -7.9852 },
+      "neighborhood": "Medina",
+      "priceRange": 1,
+      "rating": 4.4,
+      "images": [
+        {
+          "basePath": "images/places/almoravid-koubba-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "saadian-tombs",
+      "slug": "saadian-tombs",
+      "category": "monument",
+      "coordinates": { "lat": 31.6165, "lng": -7.9882 },
+      "neighborhood": "Kasbah",
+      "priceRange": 1,
+      "rating": 4.7,
+      "images": [
+        {
+          "basePath": "images/places/saadian-tombs-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "openingHours": {
+        "timezone": "Africa/Casablanca",
+        "weekly": {
+          "mon": [{ "start": "09:00", "end": "17:00" }],
+          "tue": [{ "start": "09:00", "end": "17:00" }],
+          "wed": [{ "start": "09:00", "end": "17:00" }],
+          "thu": [{ "start": "09:00", "end": "17:00" }],
+          "fri": [{ "start": "09:00", "end": "17:00" }],
+          "sat": [{ "start": "09:00", "end": "17:00" }],
+          "sun": [{ "start": "09:00", "end": "17:00" }]
+        }
+      },
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "centre-femme-artisane",
+      "slug": "centre-de-la-femme-artisane",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6355, "lng": -7.9925 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
+      "rating": 4.7,
+      "images": [
+        {
+          "basePath": "images/places/centre-femme-artisane-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "mustapha-blaoui",
+      "slug": "mustapha-blaoui",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6285, "lng": -7.9815 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
+      "rating": 4.8,
+      "images": [
+        {
+          "basePath": "images/places/mustapha-blaoui-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "les-nomades",
+      "slug": "les-nomades-de-marrakech",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6325, "lng": -7.9855 },
+      "neighborhood": "Medina",
+      "priceRange": 3,
+      "rating": 4.6,
+      "images": [
+        {
+          "basePath": "images/places/les-nomades-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "naturom",
+      "slug": "naturom",
+      "category": "shopping",
+      "coordinates": { "lat": 31.6305, "lng": -7.9862 },
+      "neighborhood": "Medina",
+      "priceRange": 2,
+      "rating": 4.6,
+      "images": [
+        {
+          "basePath": "images/places/naturom-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "rahba-kedima",
+      "slug": "rahba-kedima",
+      "category": "souk",
+      "coordinates": { "lat": 31.6315, "lng": -7.9865 },
+      "neighborhood": "Medina",
+      "rating": 4.5,
+      "images": [
+        {
+          "basePath": "images/places/rahba-kedima-1",
+          "widths": [400, 800, 1200],
+          "thumbhash": "",
+          "aspectRatio": 1.5
+        }
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-02-15T00:00:00Z"
+    }
+  ],
+  "placesI18n": [
+    {
+      "placeId": "nomad",
+      "locale": "en",
+      "name": "Nomad",
+      "description": "Modern Moroccan cuisine with stunning rooftop views over the souks.",
+      "tips": ["Book ahead for sunset tables", "Try the camel burger", "Open for lunch and dinner"],
+      "searchKeywords": ["restaurant", "rooftop", "modern moroccan"]
+    },
+    {
+      "placeId": "le-jardin",
+      "locale": "en",
+      "name": "Le Jardin",
+      "description": "Hidden garden restaurant serving fresh, contemporary Moroccan dishes.",
+      "searchKeywords": ["restaurant", "garden", "hidden"]
+    },
+    {
+      "placeId": "al-fassia",
+      "locale": "en",
+      "name": "Al Fassia",
+      "description": "Women-run institution serving the best traditional Moroccan cuisine in town.",
+      "searchKeywords": ["restaurant", "traditional", "women-run"]
+    },
+    {
+      "placeId": "la-mamounia",
+      "locale": "en",
+      "name": "La Mamounia Restaurant",
+      "description": "Legendary palace hotel restaurant — fine Moroccan dining at its most opulent.",
+      "searchKeywords": ["restaurant", "luxury", "palace", "fine dining"]
+    },
+    {
+      "placeId": "cafe-epices",
+      "locale": "en",
+      "name": "Café des Épices",
+      "description": "Iconic square-side café perfect for people-watching with fresh juices.",
+      "tips": ["Best views from the top terrace", "Fresh orange juice: 20 MAD"],
+      "searchKeywords": ["cafe", "rooftop", "juice"]
+    },
+    {
+      "placeId": "cafe-clock",
+      "locale": "en",
+      "name": "Café Clock",
+      "description": "Cultural hub famous for its camel burger and storytelling nights.",
+      "searchKeywords": ["cafe", "cultural", "camel burger"]
+    },
+    {
+      "placeId": "bacha",
+      "locale": "en",
+      "name": "BACHA Coffee",
+      "description": "Luxurious coffee house in a restored palace — over 200 coffees to choose from.",
+      "searchKeywords": ["cafe", "coffee", "palace", "luxury"]
+    },
+    {
+      "placeId": "grand-cafe",
+      "locale": "en",
+      "name": "Grand Café de la Poste",
+      "description": "Colonial-era café with art deco interiors and a lovely garden terrace.",
+      "searchKeywords": ["cafe", "colonial", "art deco"]
+    },
+    {
+      "placeId": "bahia",
+      "locale": "en",
+      "name": "Bahia Palace",
+      "description": "19th-century palace showcasing the finest Moroccan architectural artistry. A breathtaking testament to Moroccan craftsmanship with intricate zellige tile work, carved cedar ceilings, and tranquil courtyards.",
+      "tips": ["Visit early morning to avoid crowds", "Entry: 70 MAD", "Allow 1–2 hours", "Photography is allowed"],
+      "searchKeywords": ["palace", "architecture", "zellige", "museum"]
+    },
+    {
+      "placeId": "ysl",
+      "locale": "en",
+      "name": "Musée Yves Saint Laurent",
+      "description": "Striking terracotta museum dedicated to YSL's love affair with Marrakech.",
+      "tips": ["Combined ticket with Jardin Majorelle", "Allow 2 hours for both"],
+      "searchKeywords": ["museum", "fashion", "ysl", "art"]
+    },
+    {
+      "placeId": "photo",
+      "locale": "en",
+      "name": "Maison de la Photographie",
+      "description": "Fascinating collection of vintage Moroccan photography with rooftop café.",
+      "tips": ["Entry: 50 MAD", "Rooftop café is a hidden gem itself"],
+      "searchKeywords": ["museum", "photography", "vintage", "rooftop"]
+    },
+    {
+      "placeId": "dar-si-said",
+      "locale": "en",
+      "name": "Dar Si Said Museum",
+      "description": "National museum of weaving with stunning woodwork and textile collections.",
+      "searchKeywords": ["museum", "textiles", "woodwork", "crafts"]
+    },
+    {
+      "placeId": "ben-youssef",
+      "locale": "en",
+      "name": "Ben Youssef Madrasa",
+      "description": "Once the largest Islamic college in Morocco, this 14th-century masterpiece features stunning zellige tilework, carved stucco, and cedar wood carvings. The central courtyard with its reflecting pool is pure architectural poetry.",
+      "tips": ["Entry: 70 MAD", "Visit early morning for best photos", "Allow 1-1.5 hours"],
+      "searchKeywords": ["madrasa", "islamic", "architecture", "zellige"]
+    },
+    {
+      "placeId": "riad-yasmine",
+      "locale": "en",
+      "name": "Riad Yasmine",
+      "description": "Instagram-famous riad with a stunning turquoise plunge pool and zellige tiles.",
+      "searchKeywords": ["riad", "hotel", "pool", "instagram"]
+    },
+    {
+      "placeId": "el-fenn",
+      "locale": "en",
+      "name": "El Fenn",
+      "description": "Boutique luxury riad with rooftop pool, art collection, and impeccable design.",
+      "searchKeywords": ["riad", "luxury", "art", "boutique"]
+    },
+    {
+      "placeId": "la-sultana",
+      "locale": "en",
+      "name": "La Sultana",
+      "description": "Five-star riad-hotel with award-winning spa and incredible rooftop views.",
+      "searchKeywords": ["riad", "hotel", "spa", "luxury"]
+    },
+    {
+      "placeId": "majorelle",
+      "locale": "en",
+      "name": "Jardin Majorelle",
+      "description": "Electric-blue botanical garden created by Jacques Majorelle, restored by YSL.",
+      "tips": ["Included with garden entry (100 MAD)", "Less crowded in late afternoon"],
+      "searchKeywords": ["garden", "majorelle", "ysl", "botanical"]
+    },
+    {
+      "placeId": "secret",
+      "locale": "en",
+      "name": "Le Jardin Secret",
+      "description": "Hidden Islamic garden in the medina with a tower offering panoramic views.",
+      "tips": ["Climb the tower for 360° views", "Combined ticket: 70 MAD"],
+      "searchKeywords": ["garden", "hidden", "tower", "views"]
+    },
+    {
+      "placeId": "agdal",
+      "locale": "en",
+      "name": "Agdal Gardens",
+      "description": "Vast royal gardens with olive, orange, and pomegranate orchards. Open Fri & Sun.",
+      "searchKeywords": ["garden", "royal", "orchards"]
+    },
+    {
+      "placeId": "souk-semmarine",
+      "locale": "en",
+      "name": "Souk Semmarine",
+      "description": "The main souk artery — textiles, ceramics, leather, and everything in between.",
+      "tips": ["Start at 30-40% of asking price", "Walk away to get the best price"],
+      "searchKeywords": ["souk", "market", "shopping", "textiles"]
+    },
+    {
+      "placeId": "33-rue",
+      "locale": "en",
+      "name": "33 Rue Majorelle",
+      "description": "Curated concept store with contemporary Moroccan design and fashion.",
+      "searchKeywords": ["shopping", "design", "fashion", "concept store"]
+    },
+    {
+      "placeId": "tanneries",
+      "locale": "en",
+      "name": "Chouara Tanneries",
+      "description": "Ancient leather tanneries — bring mint to hold under your nose!",
+      "searchKeywords": ["tanneries", "leather", "traditional"]
+    },
+    {
+      "placeId": "heritage-spa",
+      "locale": "en",
+      "name": "Heritage Spa",
+      "description": "Luxurious traditional hammam with marble interiors and expert therapists.",
+      "searchKeywords": ["hammam", "spa", "luxury", "massage"]
+    },
+    {
+      "placeId": "hammam-mouassine",
+      "locale": "en",
+      "name": "Hammam Mouassine",
+      "description": "Authentic public hammam — the real local experience.",
+      "tips": ["Public hammam: 10-20 MAD", "Go in the morning for a quieter visit"],
+      "searchKeywords": ["hammam", "public", "traditional", "local"]
+    },
+    {
+      "placeId": "koutoubia",
+      "locale": "en",
+      "name": "Koutoubia Mosque",
+      "description": "The iconic 12th-century minaret dominates Marrakech's skyline and inspired the Giralda in Seville. While non-Muslims can't enter, the surrounding gardens are perfect for a sunset stroll with views of the Atlas Mountains.",
+      "tips": ["Free to visit the gardens", "Best photos at sunset", "Non-Muslims cannot enter the mosque"],
+      "searchKeywords": ["mosque", "minaret", "landmark", "koutoubia"]
+    },
+    {
+      "placeId": "badi-palace",
+      "locale": "en",
+      "name": "Badi Palace",
+      "description": "The atmospheric ruins of Sultan Ahmad al-Mansur's 16th-century palace, once called 'The Incomparable'. Storks nest in the crumbling walls, and the vast sunken gardens hint at past grandeur.",
+      "tips": ["Entry: 70 MAD", "Visit late afternoon for golden light", "Watch for nesting storks in spring"],
+      "searchKeywords": ["palace", "ruins", "historical", "storks"]
+    },
+    {
+      "placeId": "almoravid-koubba",
+      "locale": "en",
+      "name": "Almoravid Koubba",
+      "description": "The only surviving structure from the Almoravid dynasty (12th century), this small ablutions pavilion is a treasure of early Moroccan architecture.",
+      "tips": ["Entry: 20 MAD", "Often overlooked by tourists", "Just 15 minutes needed"],
+      "searchKeywords": ["koubba", "almoravid", "historical", "architecture"]
+    },
+    {
+      "placeId": "saadian-tombs",
+      "locale": "en",
+      "name": "Saadian Tombs",
+      "description": "Sealed for centuries and rediscovered in 1917, these ornate 16th-century royal tombs feature Italian Carrara marble, gilded honeycomb ceilings, and exquisite zellige.",
+      "tips": ["Entry: 70 MAD", "Visit at opening (9am) to avoid queues", "Photography allowed inside"],
+      "searchKeywords": ["tombs", "saadian", "royal", "mausoleum"]
+    },
+    {
+      "placeId": "centre-femme-artisane",
+      "locale": "en",
+      "name": "Centre de la Femme Artisane",
+      "description": "A women's cooperative showcasing authentic Moroccan handicrafts at fixed prices. Support local artisans directly while finding beautiful carpets, embroidery, leather goods, and textiles.",
+      "tips": ["Fixed prices, no bargaining needed", "Quality guaranteed", "Great for ethical souvenirs"],
+      "searchKeywords": ["shopping", "cooperative", "women", "handicrafts"]
+    },
+    {
+      "placeId": "mustapha-blaoui",
+      "locale": "en",
+      "name": "Mustapha Blaoui",
+      "description": "A legendary warehouse packed floor-to-ceiling with Moroccan treasures — lanterns, furniture, ceramics, textiles, and antiques. Interior designers fly in from around the world to source here.",
+      "tips": ["Bring measurements for furniture", "Shipping available worldwide", "Prices are negotiable"],
+      "searchKeywords": ["shopping", "warehouse", "antiques", "furniture"]
+    },
+    {
+      "placeId": "les-nomades",
+      "locale": "en",
+      "name": "Les Nomades de Marrakech",
+      "description": "A beautifully curated boutique in the medina specializing in Berber carpets, vintage textiles, and nomadic tribal art.",
+      "tips": ["Ask about carpet origins and meanings", "High quality but prices reflect it"],
+      "searchKeywords": ["shopping", "carpets", "berber", "textiles"]
+    },
+    {
+      "placeId": "naturom",
+      "locale": "en",
+      "name": "Naturom",
+      "description": "Morocco's answer to organic beauty — argan oil, black soap, ghassoul clay, and rose water straight from local cooperatives.",
+      "tips": ["Ask for product demonstrations", "Pure argan oil should smell nutty", "Fixed prices"],
+      "searchKeywords": ["shopping", "beauty", "argan", "organic"]
+    },
+    {
+      "placeId": "rahba-kedima",
+      "locale": "en",
+      "name": "Rahba Kedima",
+      "description": "The 'Old Square' is Marrakech's most atmospheric marketplace — apothecary stalls selling spices, dried herbs, traditional remedies, and yes, chameleons.",
+      "tips": ["Best in the morning", "Great for spices and herbs", "Bargain hard here"],
+      "searchKeywords": ["souk", "market", "spices", "herbs", "apothecary"]
     }
   ]
 }

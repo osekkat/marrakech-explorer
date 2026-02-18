@@ -54,9 +54,9 @@ const Toolkit = () => {
       <PageHeader title={t("tips.title")} subtitle={t("tips.subtitle")} />
 
       <div className="px-5 space-y-3">
-        {tips.map(({ iconName, title, content }, i) => {
+        {tips.map(({ icon, title, content }, i) => {
           const isOpen = openIndex === i;
-          const Icon = iconMap[iconName as keyof typeof iconMap] || Bus;
+          const Icon = iconMap[icon as keyof typeof iconMap] || Bus;
           return (
             <motion.div
               key={title}

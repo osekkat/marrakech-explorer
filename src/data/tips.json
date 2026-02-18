@@ -1,7 +1,9 @@
 {
   "tips": [
     {
-      "iconName": "Bus",
+      "id": "getting-around",
+      "icon": "Bus",
+      "locale": "en",
       "title": "Getting Around",
       "content": [
         "🚕 Petit taxis (beige): Metered rides within the city. Insist on the meter or agree a price before.",
@@ -11,10 +13,14 @@
         "🏍️ Avoid motorcycles in the souks — they won't avoid you!",
         "📱 Use InDrive or Careem apps for fair-priced rides.",
         "🅿️ GPS doesn't work well in the medina — use landmarks and ask locals."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Languages",
+      "id": "language-phrases",
+      "icon": "Languages",
+      "locale": "en",
       "title": "Language & Phrases",
       "content": [
         "🇲🇦 Official languages: Arabic (Darija) & French",
@@ -27,10 +33,14 @@
         "👍 Mezian — Good / Beautiful",
         "🇫🇷 French is widely spoken in tourist areas and Gueliz",
         "🇬🇧 English is common in hotels and tourist restaurants"
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Shield",
+      "id": "etiquette-customs",
+      "icon": "Shield",
+      "locale": "en",
       "title": "Etiquette & Customs",
       "content": [
         "👗 Dress modestly, especially in the medina — cover shoulders and knees.",
@@ -41,10 +51,14 @@
         "👟 Remove shoes when entering riads and homes.",
         "🌙 During Ramadan: Don't eat, drink, or smoke in public during daylight hours.",
         "🤝 Greetings are important — take time for pleasantries before business."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "important"
     },
     {
-      "iconName": "Thermometer",
+      "id": "climate-packing",
+      "icon": "Thermometer",
+      "locale": "en",
       "title": "Climate & Packing",
       "content": [
         "☀️ Best time to visit: March–May or September–November.",
@@ -54,10 +68,14 @@
         "💡 Spring is magical — roses bloom, perfect temperatures.",
         "🧴 Pack: Sunscreen, hat, comfortable walking shoes, modest clothing.",
         "🧣 Bring a scarf — useful for sun protection and mosque visits."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "HandCoins",
+      "id": "bargaining-guide",
+      "icon": "HandCoins",
+      "locale": "en",
       "title": "Bargaining Guide",
       "content": [
         "💡 Rule of thumb: Start at 30–40% of the asking price.",
@@ -67,10 +85,14 @@
         "💰 Carry small bills — sellers may claim they have no change.",
         "🎯 Don't bargain if you're not interested in buying.",
         "📱 Fair prices: Leather bag 200-400 MAD, babouche slippers 80-150 MAD, scarf 50-100 MAD."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Smartphone",
+      "id": "sim-wifi",
+      "icon": "Smartphone",
+      "locale": "en",
       "title": "SIM Cards & WiFi",
       "content": [
         "📱 Buy a SIM at the airport (Maroc Telecom, Inwi, or Orange).",
@@ -79,10 +101,14 @@
         "📶 WiFi is available in most riads, cafés, and restaurants.",
         "💡 Maroc Telecom has the best coverage overall.",
         "🔄 Top up at any tabac/newspaper kiosk."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Utensils",
+      "id": "food-drink-nightlife",
+      "icon": "Utensils",
+      "locale": "en",
       "title": "Food, Drink & Nightlife",
       "content": [
         "🥘 Must-try: Tagine, couscous (Friday tradition), pastilla, tanjia.",
@@ -93,10 +119,14 @@
         "🍷 Alcohol is available in licensed restaurants, hotels, and some bars in Gueliz.",
         "🎵 Nightlife centers around Gueliz and Hivernage — Theatro, Comptoir Darna, 555.",
         "☕ Café culture is huge — men's cafés and modern mixed cafés coexist."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Droplets",
+      "id": "hammam-guide",
+      "icon": "Droplets",
+      "locale": "en",
       "title": "Hammam Guide",
       "content": [
         "🛁 Public hammams: 10–20 MAD. Bring your own soap and towel.",
@@ -105,10 +135,14 @@
         "🧴 'Savon beldi' (black soap) and 'kessa' (exfoliating glove) are essentials.",
         "⏰ Go in the morning for a quieter experience.",
         "🌟 Top picks: Heritage Spa, Hammam Mouassine, Les Bains de Marrakech."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Hotel",
+      "id": "accommodation",
+      "icon": "Hotel",
+      "locale": "en",
       "title": "Accommodation",
       "content": [
         "🏡 Riads: Traditional courtyard houses — the quintessential Marrakech stay.",
@@ -117,10 +151,14 @@
         "🔑 Book directly with riads for better rates and personal touches.",
         "📌 Get your riad's GPS pin — taxis need exact locations in the medina.",
         "💰 Budget: 300-600 MAD/night. Mid-range: 800-1500 MAD. Luxury: 2000+ MAD."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Stethoscope",
+      "id": "health-safety",
+      "icon": "Stethoscope",
+      "locale": "en",
       "title": "Health & Safe Travels",
       "content": [
         "💉 No mandatory vaccinations, but Hep A and Typhoid recommended.",
@@ -130,10 +168,14 @@
         "⚠️ Be alert in crowded areas — pickpocketing occurs.",
         "🐒 Don't touch animals (monkeys, snakes) offered for photos.",
         "🌡️ Carry hand sanitizer and sunscreen."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "important"
     },
     {
-      "iconName": "Wallet",
+      "id": "money-tipping",
+      "icon": "Wallet",
+      "locale": "en",
       "title": "Money & Tipping",
       "content": [
         "💱 Currency: Moroccan Dirham (MAD). ~1 EUR = 10-11 MAD.",
@@ -143,10 +185,14 @@
         "🍽️ Restaurant tip: 10-15% or round up.",
         "🧳 Porter/guide tip: 20-50 MAD.",
         "🚕 Taxi: Round up to nearest 5-10 MAD."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Baby",
+      "id": "family-travel",
+      "icon": "Baby",
+      "locale": "en",
       "title": "Family Travel",
       "content": [
         "👨‍👩‍👧 Moroccans love children — expect lots of friendly attention.",
@@ -155,10 +201,14 @@
         "🍦 Kids love fresh juices and Moroccan pancakes (msemen).",
         "👶 Strollers are impractical in the medina — bring a baby carrier instead.",
         "🎨 Cooking classes often welcome children 6+."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Heart",
+      "id": "lgbtiq-travellers",
+      "icon": "Heart",
+      "locale": "en",
       "title": "LGBTIQ+ Travellers",
       "content": [
         "⚖️ Same-sex relations are technically illegal in Morocco (up to 3 years).",
@@ -167,10 +217,14 @@
         "🌍 Marrakech is relatively cosmopolitan compared to rural areas.",
         "📱 Exercise caution on dating apps — scams and entrapment have occurred.",
         "🏳️‍🌈 Connect with local LGBTIQ+ networks online before traveling for current advice."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "important"
     },
     {
-      "iconName": "Accessibility",
+      "id": "accessible-travel",
+      "icon": "Accessibility",
+      "locale": "en",
       "title": "Accessible Travel",
       "content": [
         "♿ The medina has narrow, uneven lanes — challenging for wheelchairs.",
@@ -179,10 +233,14 @@
         "🏛️ Jardin Majorelle and YSL Museum have some accessibility features.",
         "👁️ Guided tours can be arranged for visually impaired visitors.",
         "📞 Contact your riad in advance to discuss specific needs."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Leaf",
+      "id": "responsible-travel",
+      "icon": "Leaf",
+      "locale": "en",
       "title": "Responsible Travel",
       "content": [
         "💧 Water is precious — take short showers, reuse towels.",
@@ -191,10 +249,14 @@
         "🗑️ Carry a reusable water bottle — some riads offer filtered water.",
         "🤝 Choose locally-owned businesses over international chains.",
         "📸 Consider the impact of your photography on local communities."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     },
     {
-      "iconName": "Wrench",
+      "id": "nuts-bolts",
+      "icon": "Wrench",
+      "locale": "en",
       "title": "Nuts & Bolts",
       "content": [
         "🛂 Visa-free for 90 days for EU, US, UK, Canada, Australia citizens.",
@@ -203,7 +265,9 @@
         "📅 Public holidays: Eid al-Fitr, Eid al-Adha (dates vary), January 1, July 30 (Throne Day).",
         "🕐 Friday is the holy day — some shops close for midday prayers.",
         "📫 Post office (La Poste) on Jemaa el-Fna for stamps and parcels."
-      ]
+      ],
+      "lastReviewedAt": "2026-02-15T00:00:00Z",
+      "safetyLevel": "general"
     }
   ]
 }

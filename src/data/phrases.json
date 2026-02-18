@@ -1,0 +1,337 @@
+{
+  "phrases": [
+    {
+      "id": "hello",
+      "category": "greeting",
+      "locale": "en",
+      "english": "Hello",
+      "darija": "السلام عليكم",
+      "darijaLatin": "Salam alaikum",
+      "french": "Bonjour"
+    },
+    {
+      "id": "how-are-you",
+      "category": "greeting",
+      "locale": "en",
+      "english": "How are you?",
+      "darija": "لاباس؟",
+      "darijaLatin": "Labas?",
+      "french": "Comment ça va?"
+    },
+    {
+      "id": "im-fine",
+      "category": "greeting",
+      "locale": "en",
+      "english": "I'm fine",
+      "darija": "لاباس الحمد لله",
+      "darijaLatin": "Labas, hamdullah",
+      "french": "Ça va bien"
+    },
+    {
+      "id": "goodbye",
+      "category": "greeting",
+      "locale": "en",
+      "english": "Goodbye",
+      "darija": "بسلامة",
+      "darijaLatin": "Bslama",
+      "french": "Au revoir"
+    },
+    {
+      "id": "thank-you",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "Thank you",
+      "darija": "شكرا",
+      "darijaLatin": "Shukran",
+      "french": "Merci"
+    },
+    {
+      "id": "youre-welcome",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "You're welcome",
+      "darija": "بلا جميل",
+      "darijaLatin": "Bla jmil",
+      "french": "De rien"
+    },
+    {
+      "id": "please",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "Please",
+      "darija": "عافاك",
+      "darijaLatin": "Afak",
+      "french": "S'il vous plaît"
+    },
+    {
+      "id": "excuse-me",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "Excuse me",
+      "darija": "سمحلي",
+      "darijaLatin": "Smehli",
+      "french": "Excusez-moi"
+    },
+    {
+      "id": "sorry",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "Sorry",
+      "darija": "سمحلي",
+      "darijaLatin": "Smehli",
+      "french": "Pardon"
+    },
+    {
+      "id": "yes",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "Yes",
+      "darija": "إيه / أه",
+      "darijaLatin": "Iyeh / Ah",
+      "french": "Oui"
+    },
+    {
+      "id": "no",
+      "category": "courtesy",
+      "locale": "en",
+      "english": "No",
+      "darija": "لا",
+      "darijaLatin": "La",
+      "french": "Non"
+    },
+    {
+      "id": "no-thank-you",
+      "category": "shopping",
+      "locale": "en",
+      "english": "No, thank you",
+      "darija": "لا شكرا",
+      "darijaLatin": "La, shukran",
+      "french": "Non, merci"
+    },
+    {
+      "id": "how-much",
+      "category": "shopping",
+      "locale": "en",
+      "english": "How much?",
+      "darija": "بشحال؟",
+      "darijaLatin": "B'shhal?",
+      "french": "Combien?"
+    },
+    {
+      "id": "too-expensive",
+      "category": "shopping",
+      "locale": "en",
+      "english": "Too expensive",
+      "darija": "غالي بزاف",
+      "darijaLatin": "Ghali bzzaf",
+      "french": "Trop cher"
+    },
+    {
+      "id": "can-you-reduce",
+      "category": "shopping",
+      "locale": "en",
+      "english": "Can you reduce the price?",
+      "darija": "نقص شوية؟",
+      "darijaLatin": "Nqes shwiya?",
+      "french": "Vous pouvez baisser le prix?"
+    },
+    {
+      "id": "i-want-this",
+      "category": "shopping",
+      "locale": "en",
+      "english": "I want this",
+      "darija": "بغيت هاد",
+      "darijaLatin": "Bghit had",
+      "french": "Je veux ça"
+    },
+    {
+      "id": "just-looking",
+      "category": "shopping",
+      "locale": "en",
+      "english": "Just looking",
+      "darija": "غير كنشوف",
+      "darijaLatin": "Ghir kanshuf",
+      "french": "Je regarde seulement"
+    },
+    {
+      "id": "where-is",
+      "category": "directions",
+      "locale": "en",
+      "english": "Where is...?",
+      "darija": "فين...؟",
+      "darijaLatin": "Fin...?",
+      "french": "Où est...?"
+    },
+    {
+      "id": "left",
+      "category": "directions",
+      "locale": "en",
+      "english": "Left",
+      "darija": "ليسر",
+      "darijaLatin": "Lisr",
+      "french": "À gauche"
+    },
+    {
+      "id": "right",
+      "category": "directions",
+      "locale": "en",
+      "english": "Right",
+      "darija": "ليمن",
+      "darijaLatin": "Limen",
+      "french": "À droite"
+    },
+    {
+      "id": "straight",
+      "category": "directions",
+      "locale": "en",
+      "english": "Straight ahead",
+      "darija": "نيشان",
+      "darijaLatin": "Nishan",
+      "french": "Tout droit"
+    },
+    {
+      "id": "near",
+      "category": "directions",
+      "locale": "en",
+      "english": "Near / Close",
+      "darija": "قريب",
+      "darijaLatin": "Qrib",
+      "french": "Près"
+    },
+    {
+      "id": "far",
+      "category": "directions",
+      "locale": "en",
+      "english": "Far",
+      "darija": "بعيد",
+      "darijaLatin": "B'id",
+      "french": "Loin"
+    },
+    {
+      "id": "delicious",
+      "category": "food",
+      "locale": "en",
+      "english": "Delicious",
+      "darija": "لذيذ / بنين",
+      "darijaLatin": "Ldid / Bnin",
+      "french": "Délicieux"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "locale": "en",
+      "english": "Water",
+      "darija": "الماء",
+      "darijaLatin": "L'ma",
+      "french": "L'eau"
+    },
+    {
+      "id": "tea",
+      "category": "food",
+      "locale": "en",
+      "english": "Tea",
+      "darija": "أتاي",
+      "darijaLatin": "Atay",
+      "french": "Thé"
+    },
+    {
+      "id": "no-sugar",
+      "category": "food",
+      "locale": "en",
+      "english": "Without sugar",
+      "darija": "بلا سكر",
+      "darijaLatin": "Bla sukkar",
+      "french": "Sans sucre"
+    },
+    {
+      "id": "the-bill",
+      "category": "food",
+      "locale": "en",
+      "english": "The bill, please",
+      "darija": "الحساب عافاك",
+      "darijaLatin": "L'hsab afak",
+      "french": "L'addition, s'il vous plaît"
+    },
+    {
+      "id": "vegetarian",
+      "category": "food",
+      "locale": "en",
+      "english": "I'm vegetarian",
+      "darija": "أنا ما كناكلش اللحم",
+      "darijaLatin": "Ana ma kanakelsh l'hem",
+      "french": "Je suis végétarien"
+    },
+    {
+      "id": "taxi",
+      "category": "transport",
+      "locale": "en",
+      "english": "Taxi",
+      "darija": "طاكسي",
+      "darijaLatin": "Taxi",
+      "french": "Taxi"
+    },
+    {
+      "id": "stop-here",
+      "category": "transport",
+      "locale": "en",
+      "english": "Stop here",
+      "darija": "وقف هنا",
+      "darijaLatin": "Wqef hna",
+      "french": "Arrêtez ici"
+    },
+    {
+      "id": "help",
+      "category": "emergency",
+      "locale": "en",
+      "english": "Help!",
+      "darija": "عاونوني!",
+      "darijaLatin": "Awnooni!",
+      "french": "Au secours!"
+    },
+    {
+      "id": "police",
+      "category": "emergency",
+      "locale": "en",
+      "english": "Police",
+      "darija": "البوليس",
+      "darijaLatin": "L'bolis",
+      "french": "Police"
+    },
+    {
+      "id": "hospital",
+      "category": "emergency",
+      "locale": "en",
+      "english": "Hospital",
+      "darija": "سبيطار",
+      "darijaLatin": "Sbitar",
+      "french": "Hôpital"
+    },
+    {
+      "id": "pharmacy",
+      "category": "emergency",
+      "locale": "en",
+      "english": "Pharmacy",
+      "darija": "فارماسيان",
+      "darijaLatin": "Farmasyan",
+      "french": "Pharmacie"
+    },
+    {
+      "id": "im-lost",
+      "category": "emergency",
+      "locale": "en",
+      "english": "I'm lost",
+      "darija": "تلفت",
+      "darijaLatin": "Tleft",
+      "french": "Je suis perdu"
+    },
+    {
+      "id": "i-need-doctor",
+      "category": "emergency",
+      "locale": "en",
+      "english": "I need a doctor",
+      "darija": "خصني طبيب",
+      "darijaLatin": "Khssni tbib",
+      "french": "J'ai besoin d'un médecin"
+    }
+  ]
+}

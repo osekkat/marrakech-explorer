@@ -1,14 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import { Compass, Heart, Map, Lightbulb, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { navItems } from "@/data";
 
-const navItems = [
-  { path: "/", icon: Compass, labelKey: "nav.home" },
-  { path: "/picks", icon: Heart, labelKey: "nav.picks" },
-  { path: "/explore", icon: Map, labelKey: "nav.explore" },
-  { path: "/maps", icon: MapPin, labelKey: "nav.maps" },
-  { path: "/toolkit", icon: Lightbulb, labelKey: "nav.tips" },
-];
+const iconMap = {
+  Compass,
+  Heart,
+  Map,
+  MapPin,
+  Lightbulb,
+} as const;
 
 export const BottomNav = () => {
   const location = useLocation();
@@ -17,8 +18,9 @@ export const BottomNav = () => {
   return (
     <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg bg-background/90 backdrop-blur-xl border-t border-border z-50">
       <div className="flex items-center justify-around py-2 px-1">
-        {navItems.map(({ path, icon: Icon, labelKey }) => {
+        {navItems.map(({ path, iconName, labelKey }) => {
           const isActive = location.pathname === path;
+          const Icon = iconMap[iconName];
           return (
             <Link
               key={path}

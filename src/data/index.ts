@@ -41,6 +41,21 @@ export { tips } from "./tips";
 // Emergency
 export { emergencyContacts, emergencyPhrases } from "./emergency";
 
+// Scams & Safety
+export { scamsTips, scamsSectionTitle, sosButtOnText } from "./scams";
+export type { ScamTip } from "./scams";
+
+// Navigation
+export { navItems } from "./navigation";
+export type { NavItem } from "./navigation";
+
+// Settings
+export { languages, themeOptions, safetyCenterItems } from "./settings";
+export type { Language, ThemeOption, SafetyCenterItem } from "./settings";
+
+// Weather
+export { weatherDescriptions, weatherIcons, marrakechCoordinates } from "./weather";
+
 // Images
 export { images, getImage } from "./images";
 export type { ImageKey } from "./images";

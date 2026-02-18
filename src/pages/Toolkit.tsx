@@ -23,7 +23,7 @@ import {
   Wrench,
   AlertTriangle,
 } from "lucide-react";
-import { tips } from "@/data";
+import { tips, scamsTips, scamsSectionTitle, sosButtOnText } from "@/data";
 
 const iconMap = {
   Bus,
@@ -107,29 +107,15 @@ const Toolkit = () => {
           <div className="flex items-center gap-3 mb-3">
             <AlertTriangle className="w-5 h-5 text-destructive" />
             <h3 className="font-display text-base font-semibold text-foreground">
-              Scams & Incident Response
+              {scamsSectionTitle}
             </h3>
           </div>
           <div className="space-y-2 text-sm text-foreground/80">
-            <p>
-              🚨 <strong>Lost passport:</strong> Contact your embassy immediately. Tourist Police
-              can help with paperwork.
-            </p>
-            <p>
-              🔒 <strong>Theft:</strong> File a report at the nearest police station (commissariat).
-              Get a copy for insurance.
-            </p>
-            <p>
-              ⚠️ <strong>Common scams:</strong> Fake guides, "closed today" redirections, henna
-              ambushes, carpet shop detours.
-            </p>
-            <p>
-              🛡️ <strong>Prevention:</strong> Keep valuables hidden, use inside pockets, be wary of
-              unsolicited help.
-            </p>
-            <p>
-              📞 <strong>Tourist Police:</strong> +212 524 384 601
-            </p>
+            {scamsTips.map((tip, i) => (
+              <p key={i}>
+                {tip.icon} <strong>{tip.label}:</strong> {tip.content}
+              </p>
+            ))}
           </div>
         </div>
       </div>
@@ -141,7 +127,7 @@ const Toolkit = () => {
           className="w-full flex items-center justify-center gap-2 bg-destructive text-destructive-foreground rounded-xl p-4 font-semibold text-sm min-h-[44px]"
         >
           <AlertTriangle className="w-5 h-5" />
-          SOS — Emergency Mode
+          {sosButtOnText}
         </button>
       </div>
 

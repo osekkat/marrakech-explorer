@@ -2,37 +2,51 @@ import { motion } from "framer-motion";
 import { PageHeader } from "@/components/PageHeader";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
-import { Globe, Sun, Moon, Monitor, Type, Zap, Info, Trash2, Shield, ChevronRight } from "lucide-react";
+import {
+  Globe,
+  Sun,
+  Moon,
+  Monitor,
+  Zap,
+  Info,
+  Trash2,
+  Shield,
+  ChevronRight,
+} from "lucide-react";
+import { languages, themeOptions, safetyCenterItems } from "@/data";
 
-const languages = [
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-];
+const themeIconMap = {
+  Monitor,
+  Sun,
+  Moon,
+} as const;
 
 const Settings = () => {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'system');
-  const [reduceMotion, setReduceMotion] = useState(() => localStorage.getItem('reduce-motion') === 'true');
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "system");
+  const [reduceMotion, setReduceMotion] = useState(
+    () => localStorage.getItem("reduce-motion") === "true"
+  );
 
   useEffect(() => {
     const root = document.documentElement;
-    localStorage.setItem('theme', theme);
-    root.classList.remove('dark', 'light');
-    if (theme === 'dark') root.classList.add('dark');
-    else if (theme === 'light') root.classList.remove('dark');
+    localStorage.setItem("theme", theme);
+    root.classList.remove("dark", "light");
+    if (theme === "dark") root.classList.add("dark");
+    else if (theme === "light") root.classList.remove("dark");
     else {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.classList.add('dark');
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) root.classList.add("dark");
     }
   }, [theme]);
 
   useEffect(() => {
-    localStorage.setItem('reduce-motion', String(reduceMotion));
-    document.documentElement.style.setProperty('--motion-duration', reduceMotion ? '0s' : '');
+    localStorage.setItem("reduce-motion", String(reduceMotion));
+    document.documentElement.style.setProperty("--motion-duration", reduceMotion ? "0s" : "");
   }, [reduceMotion]);
 
   const changeLang = (code: string) => {
     i18n.changeLanguage(code);
-    localStorage.setItem('app-language', code);
+    localStorage.setItem("app-language", code);
   };
 
   const clearCache = () => {
@@ -43,16 +57,16 @@ const Settings = () => {
 
   return (
     <div>
-      <PageHeader title={t('settings.title')} />
+      <PageHeader title={t("settings.title")} />
 
       <div className="px-5 space-y-6">
         {/* Language */}
         <section>
           <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-3">
-            <Globe className="w-4 h-4 text-primary" /> {t('settings.language')}
+            <Globe className="w-4 h-4 text-primary" /> {t("settings.language")}
           </h3>
           <div className="flex gap-2">
-            {languages.map(l => (
+            {languages.map((l) => (
               <button
                 key={l.code}
                 onClick={() => changeLang(l.code)}
@@ -72,40 +86,39 @@ const Settings = () => {
         {/* Theme */}
         <section>
           <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-3">
-            <Sun className="w-4 h-4 text-primary" /> {t('settings.theme')}
+            <Sun className="w-4 h-4 text-primary" /> {t("settings.theme")}
           </h3>
           <div className="flex gap-2">
-            {[
-              { id: "system", icon: Monitor, label: t('settings.system') },
-              { id: "light", icon: Sun, label: t('settings.light') },
-              { id: "dark", icon: Moon, label: t('settings.dark') },
-            ].map(({ id, icon: Icon, label }) => (
-              <button
-                key={id}
-                onClick={() => setTheme(id)}
-                className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium min-h-[44px] transition-all ${
-                  theme === id ? "bg-primary text-primary-foreground" : "bg-card text-foreground"
-                }`}
-              >
-                <Icon className="w-4 h-4" />
-                {label}
-              </button>
-            ))}
+            {themeOptions.map(({ id, iconName, labelKey }) => {
+              const Icon = themeIconMap[iconName];
+              return (
+                <button
+                  key={id}
+                  onClick={() => setTheme(id)}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium min-h-[44px] transition-all ${
+                    theme === id ? "bg-primary text-primary-foreground" : "bg-card text-foreground"
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  {t(labelKey)}
+                </button>
+              );
+            })}
           </div>
         </section>
 
         {/* Accessibility */}
         <section>
           <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-3">
-            <Zap className="w-4 h-4 text-primary" /> {t('settings.accessibility')}
+            <Zap className="w-4 h-4 text-primary" /> {t("settings.accessibility")}
           </h3>
           <div className="space-y-3">
             <label className="flex items-center justify-between bg-card rounded-xl p-4 min-h-[44px]">
-              <span className="text-sm text-foreground">{t('settings.reduceMotion')}</span>
+              <span className="text-sm text-foreground">{t("settings.reduceMotion")}</span>
               <input
                 type="checkbox"
                 checked={reduceMotion}
-                onChange={e => setReduceMotion(e.target.checked)}
+                onChange={(e) => setReduceMotion(e.target.checked)}
                 className="w-5 h-5 accent-primary"
               />
             </label>
@@ -115,14 +128,10 @@ const Settings = () => {
         {/* Safety Center */}
         <section>
           <h3 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-3">
-            <Shield className="w-4 h-4 text-primary" /> {t('settings.safetyCenter')}
+            <Shield className="w-4 h-4 text-primary" /> {t("settings.safetyCenter")}
           </h3>
           <div className="bg-card rounded-xl overflow-hidden">
-            {[
-              { label: "Emergency Contacts", detail: "Police: 19 · Ambulance: 15 · Tourist Police: +212 524 384 601" },
-              { label: "Embassies in Rabat", detail: "Most embassies are in the capital. Check your country's website." },
-              { label: "SOS Message Templates", detail: "Pre-written messages for emergencies in Arabic and French" },
-            ].map((item, i) => (
+            {safetyCenterItems.map((item, i) => (
               <div key={i} className={`p-4 ${i > 0 ? "border-t border-border" : ""}`}>
                 <div className="flex items-center justify-between">
                   <div>
@@ -137,9 +146,12 @@ const Settings = () => {
         </section>
 
         {/* Clear cache */}
-        <button onClick={clearCache} className="flex items-center gap-3 w-full bg-card rounded-xl p-4 min-h-[44px]">
+        <button
+          onClick={clearCache}
+          className="flex items-center gap-3 w-full bg-card rounded-xl p-4 min-h-[44px]"
+        >
           <Trash2 className="w-4 h-4 text-destructive" />
-          <span className="text-sm font-medium text-destructive">{t('settings.clearCache')}</span>
+          <span className="text-sm font-medium text-destructive">{t("settings.clearCache")}</span>
         </button>
 
         {/* About */}
@@ -147,8 +159,10 @@ const Settings = () => {
           <div className="flex items-center gap-3">
             <Info className="w-4 h-4 text-muted-foreground" />
             <div>
-              <p className="text-sm font-medium text-foreground">{t('settings.about')}</p>
-              <p className="text-xs text-muted-foreground">{t('settings.version')} 1.0.0 · Marrakech Compass</p>
+              <p className="text-sm font-medium text-foreground">{t("settings.about")}</p>
+              <p className="text-xs text-muted-foreground">
+                {t("settings.version")} 1.0.0 · Marrakech Compass
+              </p>
             </div>
           </div>
         </div>

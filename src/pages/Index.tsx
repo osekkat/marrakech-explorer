@@ -7,9 +7,7 @@ import {
   Lightbulb,
   Star,
   Plane,
-  ChevronRight,
   Settings,
-  Globe,
   Clock,
   Sun,
   ChevronDown,
@@ -51,16 +49,10 @@ const arrivalIconMap = {
 } as const;
 
 const Index = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [selectedDuration, setSelectedDuration] = useState<string | null>(null);
   const [showArrival, setShowArrival] = useState(false);
   const { toggle, isFavorite } = useFavorites("itinerary-favorites");
-
-  const toggleLang = () => {
-    const next = i18n.language === "en" ? "fr" : "en";
-    i18n.changeLanguage(next);
-    localStorage.setItem("app-language", next);
-  };
 
   return (
     <div className="min-h-screen">
@@ -74,40 +66,32 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-hero" />
 
         {/* Top bar */}
-        <div className="absolute top-0 left-0 right-0 p-4 flex justify-between items-start z-10">
+        <div className="absolute top-0 left-0 right-0 px-4 pt-14 flex justify-between items-start z-10">
           <WeatherWidget />
-          <div className="flex gap-2">
-            <button
-              onClick={toggleLang}
-              className="p-2 rounded-full bg-foreground/20 backdrop-blur-md min-w-[44px] min-h-[44px] flex items-center justify-center"
-            >
-              <Globe className="w-4 h-4 text-sand-light" />
-            </button>
-            <Link
-              to="/settings"
-              className="p-2 rounded-full bg-foreground/20 backdrop-blur-md min-w-[44px] min-h-[44px] flex items-center justify-center"
-            >
-              <Settings className="w-4 h-4 text-sand-light" />
-            </Link>
-          </div>
+          <Link
+            to="/settings"
+            className="p-2 rounded-full bg-foreground/20 backdrop-blur-md min-w-[44px] min-h-[44px] flex items-center justify-center"
+          >
+            <Settings className="w-4 h-4 text-sand-light" />
+          </Link>
         </div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="absolute bottom-0 left-0 right-0 p-6"
+          className="absolute bottom-0 left-0 right-0 p-6 pb-12"
         >
           <div className="flex items-center gap-1 mb-2">
-            <Star className="w-4 h-4 fill-gold text-gold" />
-            <span className="text-sand text-xs font-medium tracking-wide uppercase">
+            <Star className="w-4 h-4 fill-gold text-gold drop-shadow-md" />
+            <span className="text-sand-light text-xs font-medium tracking-wide uppercase text-shadow-hero">
               {t("home.tagline")}
             </span>
           </div>
-          <h1 className="font-display text-4xl font-bold text-sand-light leading-tight">
+          <h1 className="font-display text-4xl font-bold text-white leading-tight text-shadow-hero">
             {t("home.title")}
           </h1>
-          <p className="text-sand/90 mt-2 text-sm max-w-xs">{t("home.subtitle")}</p>
+          <p className="text-sand-light mt-2 text-sm max-w-xs text-shadow-hero">{t("home.subtitle")}</p>
         </motion.div>
       </div>
 

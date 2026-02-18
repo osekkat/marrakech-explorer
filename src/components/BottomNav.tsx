@@ -16,8 +16,8 @@ export const BottomNav = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg bg-background/90 backdrop-blur-xl border-t border-border z-50">
-      <div className="flex items-center justify-around py-2 px-1">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg bg-background/90 backdrop-blur-xl border-t border-border z-50 pb-6">
+      <div className="flex items-center justify-around pt-2 pb-1 px-1">
         {navItems.map(({ path, iconName, labelKey }) => {
           const isActive = location.pathname === path;
           const Icon = iconMap[iconName];

@@ -42,7 +42,7 @@ export { tips } from "./tips";
 export { emergencyContacts, emergencyPhrases } from "./emergency";
 
 // Scams & Safety
-export { scamsTips, scamsSectionTitle, sosButtOnText } from "./scams";
+export { scamsTips, scamsSectionTitle, sosButtonText, sosButtOnText } from "./scams";
 export type { ScamTip } from "./scams";
 
 // Navigation

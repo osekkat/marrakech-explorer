@@ -1,0 +1,155 @@
+{
+  "categoryConfig": [
+    { "key": "All", "iconName": "MapPin", "color": "text-foreground" },
+    { "key": "Restaurants", "iconName": "Utensils", "color": "text-primary" },
+    { "key": "Cafés", "iconName": "Coffee", "color": "text-accent" },
+    { "key": "Museums", "iconName": "Landmark", "color": "text-secondary" },
+    { "key": "Riads", "iconName": "Hotel", "color": "text-primary" },
+    { "key": "Gardens", "iconName": "TreePalm", "color": "text-secondary" },
+    { "key": "Shopping", "iconName": "ShoppingBag", "color": "text-accent" },
+    { "key": "Hammams", "iconName": "Droplets", "color": "text-secondary" },
+    { "key": "Day Trips", "iconName": "Mountain", "color": "text-muted-foreground" }
+  ],
+  "pois": [
+    {
+      "id": "bahia",
+      "name": "Bahia Palace",
+      "category": "Museums",
+      "area": "Medina",
+      "rating": 4.8,
+      "lat": 31.6217,
+      "lng": -7.9832,
+      "description": "19th-century palace with stunning Moroccan architecture."
+    },
+    {
+      "id": "majorelle",
+      "name": "Jardin Majorelle",
+      "category": "Gardens",
+      "area": "Gueliz",
+      "rating": 4.7,
+      "lat": 31.6415,
+      "lng": -8.0032,
+      "description": "Electric-blue botanical garden created by Jacques Majorelle."
+    },
+    {
+      "id": "ysl",
+      "name": "Musée Yves Saint Laurent",
+      "category": "Museums",
+      "area": "Gueliz",
+      "rating": 4.7,
+      "lat": 31.6418,
+      "lng": -8.003,
+      "description": "Terracotta museum dedicated to YSL's Marrakech love affair."
+    },
+    {
+      "id": "nomad",
+      "name": "Nomad",
+      "category": "Restaurants",
+      "area": "Medina",
+      "rating": 4.7,
+      "lat": 31.629,
+      "lng": -7.987,
+      "description": "Modern Moroccan cuisine with rooftop views over the souks."
+    },
+    {
+      "id": "cafe-epices",
+      "name": "Café des Épices",
+      "category": "Cafés",
+      "area": "Medina",
+      "rating": 4.5,
+      "lat": 31.631,
+      "lng": -7.986,
+      "description": "Iconic café perfect for people-watching with fresh juices."
+    },
+    {
+      "id": "souk-semmarine",
+      "name": "Souk Semmarine",
+      "category": "Shopping",
+      "area": "Medina",
+      "rating": 4.4,
+      "lat": 31.632,
+      "lng": -7.988,
+      "description": "The main souk artery — textiles, ceramics, leather."
+    },
+    {
+      "id": "heritage-spa",
+      "name": "Heritage Spa",
+      "category": "Hammams",
+      "area": "Medina",
+      "rating": 4.8,
+      "lat": 31.628,
+      "lng": -7.985,
+      "description": "Luxurious traditional hammam with marble interiors."
+    },
+    {
+      "id": "le-jardin",
+      "name": "Le Jardin",
+      "category": "Restaurants",
+      "area": "Medina",
+      "rating": 4.6,
+      "lat": 31.6305,
+      "lng": -7.9855,
+      "description": "Hidden garden restaurant serving contemporary Moroccan dishes."
+    },
+    {
+      "id": "secret",
+      "name": "Le Jardin Secret",
+      "category": "Gardens",
+      "area": "Medina",
+      "rating": 4.5,
+      "lat": 31.633,
+      "lng": -7.987,
+      "description": "Hidden Islamic garden with a tower offering panoramic views."
+    },
+    {
+      "id": "ben-youssef",
+      "name": "Ben Youssef Madrasa",
+      "category": "Museums",
+      "area": "Medina",
+      "rating": 4.8,
+      "lat": 31.634,
+      "lng": -7.985,
+      "description": "Largest Islamic college in Morocco with carved stucco and cedar."
+    },
+    {
+      "id": "riad-yasmine",
+      "name": "Riad Yasmine",
+      "category": "Riads",
+      "area": "Medina",
+      "rating": 4.9,
+      "lat": 31.63,
+      "lng": -7.984,
+      "description": "Instagram-famous riad with turquoise plunge pool."
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas Mountains",
+      "category": "Day Trips",
+      "area": "Outside",
+      "rating": 4.8,
+      "lat": 31.06,
+      "lng": -7.91,
+      "description": "Berber villages, waterfalls, and breathtaking mountain views."
+    },
+    {
+      "id": "bacha",
+      "name": "BACHA Coffee",
+      "category": "Cafés",
+      "area": "Medina",
+      "rating": 4.7,
+      "lat": 31.6318,
+      "lng": -7.9845,
+      "description": "Luxurious coffee house in a restored palace."
+    },
+    {
+      "id": "el-fenn",
+      "name": "El Fenn",
+      "category": "Riads",
+      "area": "Medina",
+      "rating": 4.8,
+      "lat": 31.6295,
+      "lng": -7.9862,
+      "description": "Boutique luxury riad with rooftop pool and art collection."
+    }
+  ]
+}

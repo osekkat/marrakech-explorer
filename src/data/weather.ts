@@ -1,48 +1,11 @@
-export const weatherDescriptions: Record<number, string> = {
-  0: "Clear sky",
-  1: "Mainly clear",
-  2: "Partly cloudy",
-  3: "Overcast",
-  45: "Foggy",
-  48: "Depositing rime fog",
-  51: "Light drizzle",
-  53: "Moderate drizzle",
-  55: "Dense drizzle",
-  61: "Slight rain",
-  63: "Moderate rain",
-  65: "Heavy rain",
-  71: "Slight snow",
-  73: "Moderate snow",
-  75: "Heavy snow",
-  80: "Slight showers",
-  81: "Moderate showers",
-  82: "Violent showers",
-  95: "Thunderstorm",
-};
+import weatherData from "./weather.json";
 
-export const weatherIcons: Record<number, string> = {
-  0: "☀️",
-  1: "🌤️",
-  2: "⛅",
-  3: "☁️",
-  45: "🌫️",
-  48: "🌫️",
-  51: "🌦️",
-  53: "🌧️",
-  55: "🌧️",
-  61: "🌧️",
-  63: "🌧️",
-  65: "🌧️",
-  71: "🌨️",
-  73: "🌨️",
-  75: "❄️",
-  80: "🌦️",
-  81: "🌧️",
-  82: "⛈️",
-  95: "⛈️",
-};
+export const weatherDescriptions: Record<number, string> = Object.fromEntries(
+  Object.entries(weatherData.weatherDescriptions).map(([k, v]) => [Number(k), v])
+);
 
-export const marrakechCoordinates = {
-  latitude: 31.6295,
-  longitude: -7.9811,
-};
+export const weatherIcons: Record<number, string> = Object.fromEntries(
+  Object.entries(weatherData.weatherIcons).map(([k, v]) => [Number(k), v])
+);
+
+export const marrakechCoordinates = weatherData.marrakechCoordinates;

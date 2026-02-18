@@ -1,38 +1,13 @@
+import scamsData from "./scams.json";
+
 export interface ScamTip {
   icon: string;
   label: string;
   content: string;
 }
 
-export const scamsTips: ScamTip[] = [
-  {
-    icon: "🚨",
-    label: "Lost passport",
-    content: "Contact your embassy immediately. Tourist Police can help with paperwork.",
-  },
-  {
-    icon: "🔒",
-    label: "Theft",
-    content:
-      "File a report at the nearest police station (commissariat). Get a copy for insurance.",
-  },
-  {
-    icon: "⚠️",
-    label: "Common scams",
-    content:
-      'Fake guides, "closed today" redirections, henna ambushes, carpet shop detours.',
-  },
-  {
-    icon: "🛡️",
-    label: "Prevention",
-    content: "Keep valuables hidden, use inside pockets, be wary of unsolicited help.",
-  },
-  {
-    icon: "📞",
-    label: "Tourist Police",
-    content: "+212 524 384 601",
-  },
-];
-
-export const scamsSectionTitle = "Scams & Incident Response";
-export const sosButtOnText = "SOS — Emergency Mode";
+export const scamsTips: ScamTip[] = scamsData.scamsTips as ScamTip[];
+export const scamsSectionTitle: string = scamsData.scamsSectionTitle;
+export const sosButtonText: string = scamsData.sosButtonText;
+// Backwards compatibility alias (fixing typo)
+export const sosButtOnText: string = scamsData.sosButtonText;

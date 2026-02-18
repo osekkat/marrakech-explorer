@@ -8,7 +8,7 @@
       "title": "Ben Youssef Medersa",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "Once the largest Islamic college in Morocco, this 14th-century masterpiece features stunning zellige tilework, carved stucco, and cedar wood carvings. The central courtyard with its reflecting pool is pure architectural poetry.",
-      "images": ["images/places/ben-youssef-1"]
+      "imageKey": "benYoussef"
     },
     {
       "id": "koutoubia",
@@ -18,7 +18,7 @@
       "title": "Koutoubia Mosque",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "The iconic 12th-century minaret dominates Marrakech's skyline and inspired the Giralda in Seville. While non-Muslims can't enter, the surrounding gardens are perfect for a sunset stroll with views of the Atlas Mountains.",
-      "images": ["images/places/koutoubia-1"]
+      "imageKey": "koutoubia"
     },
     {
       "id": "badi-palace",
@@ -28,7 +28,7 @@
       "title": "Badi Palace",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "The atmospheric ruins of Sultan Ahmad al-Mansur's 16th-century palace, once called 'The Incomparable'. Storks nest in the crumbling walls, and the vast sunken gardens hint at past grandeur. The underground prison is hauntingly atmospheric.",
-      "images": ["images/places/badi-palace-1"]
+      "imageKey": "badiPalace"
     },
     {
       "id": "almoravid-koubba",
@@ -38,7 +38,7 @@
       "title": "Almoravid Koubba",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "The only surviving structure from the Almoravid dynasty (12th century), this small ablutions pavilion is a treasure of early Moroccan architecture. The intricate carved dome and arches showcase the origins of Marrakech's architectural legacy.",
-      "images": ["images/places/almoravid-koubba-1"]
+      "imageKey": "almoravidKoubba"
     },
     {
       "id": "saadian-tombs",
@@ -48,7 +48,7 @@
       "title": "Saadian Tombs",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "Sealed for centuries and rediscovered in 1917, these ornate 16th-century royal tombs feature Italian Carrara marble, gilded honeycomb ceilings, and exquisite zellige. The Hall of Twelve Columns is breathtakingly beautiful.",
-      "images": ["images/places/saadian-tombs-1"]
+      "imageKey": "saadianTombs"
     },
     {
       "id": "bahia-palace",
@@ -58,7 +58,7 @@
       "title": "Bahia Palace",
       "tagline": "Best Architectural Experience",
       "whyWeLoveIt": "A breathtaking testament to Moroccan craftsmanship — intricate zellige tile work, carved cedar ceilings, and tranquil courtyards create an atmosphere of timeless beauty. Don't miss the harem quarters with painted wooden ceilings.",
-      "images": ["images/places/bahia-1"]
+      "imageKey": "bahia"
     },
     {
       "id": "centre-femme-artisane",
@@ -68,7 +68,7 @@
       "title": "Centre de la Femme Artisane",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "A women's cooperative showcasing authentic Moroccan handicrafts at fixed prices. Support local artisans directly while finding beautiful carpets, embroidery, leather goods, and textiles — all made by skilled Moroccan women.",
-      "images": ["images/places/centre-femme-artisane-1"]
+      "imageKey": "femmeArtisane"
     },
     {
       "id": "mustapha-blaoui",
@@ -78,7 +78,7 @@
       "title": "Mustapha Blaoui",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "A legendary warehouse packed floor-to-ceiling with Moroccan treasures — lanterns, furniture, ceramics, textiles, and antiques. Interior designers fly in from around the world to source here. Overwhelming in the best way.",
-      "images": ["images/places/mustapha-blaoui-1"]
+      "imageKey": "blaoui"
     },
     {
       "id": "les-nomades",
@@ -88,7 +88,7 @@
       "title": "Les Nomades de Marrakech",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "A beautifully curated boutique in the medina specializing in Berber carpets, vintage textiles, and nomadic tribal art. Each piece has a story, and the knowledgeable staff share the cultural heritage behind every item.",
-      "images": ["images/places/les-nomades-1"]
+      "imageKey": "nomades"
     },
     {
       "id": "jardin-majorelle-shop",
@@ -98,7 +98,7 @@
       "title": "Jardin Majorelle Boutique",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "The garden's boutique offers exquisite YSL-inspired designs, Majorelle blue ceramics, and curated Moroccan crafts. While pricier than the souks, the quality and design are impeccable — perfect for special gifts.",
-      "images": ["images/places/majorelle-boutique-1"]
+      "imageKey": "majorelle"
     },
     {
       "id": "naturom",
@@ -108,7 +108,7 @@
       "title": "Naturom",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "Morocco's answer to organic beauty — argan oil, black soap, ghassoul clay, and rose water straight from local cooperatives. Learn about traditional beauty rituals and take home authentic hammam products.",
-      "images": ["images/places/naturom-1"]
+      "imageKey": "naturom"
     },
     {
       "id": "rahba-kedima",
@@ -118,7 +118,7 @@
       "title": "Rahba Kedima",
       "tagline": "Best Shopping Experience",
       "whyWeLoveIt": "The 'Old Square' is Marrakech's most atmospheric marketplace — apothecary stalls selling spices, dried herbs, traditional remedies, and yes, chameleons. The surrounding carpet dealers and basket weavers add to the sensory overload.",
-      "images": ["images/places/rahba-kedima-1"]
+      "imageKey": "rahbaKedima"
     }
   ]
 }

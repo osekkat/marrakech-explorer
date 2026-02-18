@@ -199,7 +199,8 @@ export interface Pick {
   title: string;
   tagline: string;
   whyWeLoveIt: string;
-  images: string[];
+  imageUrl?: string;
+  imageKey?: string;
 }
 
 // ============================================================================

@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "plan": "Plan",
+    "picks": "Our Picks",
+    "explore": "Explore",
+    "tips": "Tips"
+  },
+  "home": {
+    "tagline": "Your guide to the Red City",
+    "title": "Marrakech",
+    "subtitle": "Discover the magic of Morocco's most enchanting city — from ancient medinas to vibrant souks.",
+    "planTrip": "Plan Your Trip",
+    "dontMiss": "Don't Miss",
+    "arrivalMode": "Arrival Mode",
+    "quickTools": "Quick Tools",
+    "weather": "Weather",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind"
+  },
+  "plan": {
+    "title": "Plan Your Trip",
+    "subtitle": "Choose your travel style and duration"
+  },
+  "picks": {
+    "title": "Our Picks",
+    "subtitle": "Coup de cœur — the best Marrakech has to offer",
+    "whyWeLove": "Why We Love It",
+    "tips": "Practical Tips"
+  },
+  "explore": {
+    "title": "Explore",
+    "subtitle": "Discover the best of Marrakech",
+    "allNeighborhoods": "All",
+    "nearMe": "Near Me",
+    "search": "Search places..."
+  },
+  "tips": {
+    "title": "Travel Toolkit",
+    "subtitle": "Essential tips for your Marrakech adventure"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "accessibility": "Accessibility",
+    "reduceMotion": "Reduce Motion",
+    "textSize": "Text Size",
+    "about": "About",
+    "version": "Version",
+    "clearCache": "Clear Cache",
+    "safetyCenter": "Safety Center"
+  },
+  "emergency": {
+    "title": "Emergency",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "fire": "Fire Brigade",
+    "tourist": "Tourist Police",
+    "embassy": "Your Embassy",
+    "lostPassport": "Lost Passport",
+    "medicalHelp": "Medical Help",
+    "shareLocation": "Share My Location"
+  },
+  "arrival": {
+    "airport": "Airport Info",
+    "airportDesc": "Marrakech Menara Airport (RAK) — 6km from city center",
+    "transfer": "Transfer Options",
+    "taxi": "Petit taxi to Medina: ~70-100 MAD (fixed rate)",
+    "bus": "Bus 19 to Jemaa el-Fna: 30 MAD",
+    "private": "Private transfer: 150-250 MAD",
+    "firstSteps": "First Steps Checklist",
+    "currency": "Currency Converter",
+    "prayerTimes": "Prayer Times",
+    "phrases": "Essential Phrases"
+  },
+  "common": {
+    "save": "Save",
+    "saved": "Saved",
+    "share": "Share",
+    "back": "Back",
+    "loading": "Loading..."
+  }
+}

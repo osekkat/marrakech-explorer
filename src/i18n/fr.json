@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "plan": "Planifier",
+    "picks": "Nos Coups de Cœur",
+    "explore": "Explorer",
+    "tips": "Conseils"
+  },
+  "home": {
+    "tagline": "Votre guide de la Ville Rouge",
+    "title": "Marrakech",
+    "subtitle": "Découvrez la magie de la ville la plus envoûtante du Maroc — des médinas anciennes aux souks vibrants.",
+    "planTrip": "Planifiez votre voyage",
+    "dontMiss": "À ne pas manquer",
+    "arrivalMode": "Mode Arrivée",
+    "quickTools": "Outils Rapides",
+    "weather": "Météo",
+    "feelsLike": "Ressenti",
+    "humidity": "Humidité",
+    "wind": "Vent"
+  },
+  "plan": {
+    "title": "Planifiez votre voyage",
+    "subtitle": "Choisissez votre style et durée de voyage"
+  },
+  "picks": {
+    "title": "Nos Coups de Cœur",
+    "subtitle": "Le meilleur de ce que Marrakech a à offrir",
+    "whyWeLove": "Pourquoi on adore",
+    "tips": "Conseils Pratiques"
+  },
+  "explore": {
+    "title": "Explorer",
+    "subtitle": "Découvrez le meilleur de Marrakech",
+    "allNeighborhoods": "Tous",
+    "nearMe": "Près de moi",
+    "search": "Rechercher des lieux..."
+  },
+  "tips": {
+    "title": "Boîte à Outils",
+    "subtitle": "Conseils essentiels pour votre aventure à Marrakech"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "theme": "Thème",
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre",
+    "accessibility": "Accessibilité",
+    "reduceMotion": "Réduire les animations",
+    "textSize": "Taille du texte",
+    "about": "À propos",
+    "version": "Version",
+    "clearCache": "Vider le cache",
+    "safetyCenter": "Centre de Sécurité"
+  },
+  "emergency": {
+    "title": "Urgence",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "fire": "Pompiers",
+    "tourist": "Police Touristique",
+    "embassy": "Votre Ambassade",
+    "lostPassport": "Passeport Perdu",
+    "medicalHelp": "Aide Médicale",
+    "shareLocation": "Partager ma position"
+  },
+  "arrival": {
+    "airport": "Infos Aéroport",
+    "airportDesc": "Aéroport Marrakech Menara (RAK) — 6km du centre-ville",
+    "transfer": "Options de Transfert",
+    "taxi": "Petit taxi vers la Médina : ~70-100 MAD (tarif fixe)",
+    "bus": "Bus 19 vers Jemaa el-Fna : 30 MAD",
+    "private": "Transfert privé : 150-250 MAD",
+    "firstSteps": "Checklist Premiers Pas",
+    "currency": "Convertisseur de Devises",
+    "prayerTimes": "Heures de Prière",
+    "phrases": "Phrases Essentielles"
+  },
+  "common": {
+    "save": "Sauvegarder",
+    "saved": "Sauvegardé",
+    "share": "Partager",
+    "back": "Retour",
+    "loading": "Chargement..."
+  }
+}

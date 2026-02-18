@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { Compass, Heart, Map, Lightbulb } from "lucide-react";
+import { Compass, Heart, Map, Lightbulb, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const navItems = [
   { path: "/", icon: Compass, labelKey: "nav.home" },
   { path: "/picks", icon: Heart, labelKey: "nav.picks" },
   { path: "/explore", icon: Map, labelKey: "nav.explore" },
+  { path: "/maps", icon: MapPin, labelKey: "nav.maps" },
   { path: "/toolkit", icon: Lightbulb, labelKey: "nav.tips" },
 ];
 

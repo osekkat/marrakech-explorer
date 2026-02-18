@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Picks from "./pages/Picks";
 import Explore from "./pages/Explore";
 import Toolkit from "./pages/Toolkit";
+import Maps from "./pages/Maps";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import "./i18n";
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/picks" element={<Picks />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/maps" element={<Maps />} />
             <Route path="/toolkit" element={<Toolkit />} />
             <Route path="/settings" element={<Settings />} />
           </Route>

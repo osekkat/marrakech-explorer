@@ -56,6 +56,10 @@ export type { Language, ThemeOption, SafetyCenterItem } from "./settings";
 // Weather
 export { weatherDescriptions, weatherIcons, marrakechCoordinates } from "./weather";
 
+// UI Strings
+export { uiStrings, arrivalToolLinks } from "./ui-strings";
+export type { ArrivalToolLink } from "./ui-strings";
+
 // Images
 export { images, getImage } from "./images";
 export type { ImageKey } from "./images";

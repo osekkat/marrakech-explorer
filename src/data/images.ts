@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-marrakech.jpg";
+import heroImage from "@/assets/hero-marrakech3.jpg";
 import jemaaImage from "@/assets/jemaa-el-fna.jpg";
 import riadImage from "@/assets/riad-courtyard.jpg";
 import spiceImage from "@/assets/spice-souk.jpg";

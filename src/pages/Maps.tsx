@@ -19,7 +19,7 @@ import {
   Mountain,
   Coffee,
 } from "lucide-react";
-import { pois, categoryConfig } from "@/data";
+import { pois, categoryConfig, uiStrings } from "@/data";
 import type { POI } from "@/data";
 
 const iconMap = {
@@ -132,8 +132,8 @@ const Maps = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <p className="text-xs text-muted-foreground/40 font-medium tracking-wider uppercase">
               {mapStyle === "streets"
-                ? "Map · Connect Mapbox to activate"
-                : "Satellite · Connect Mapbox to activate"}
+                ? uiStrings.mapPlaceholderStreets
+                : uiStrings.mapPlaceholderSatellite}
             </p>
           </div>
         </div>
@@ -257,7 +257,7 @@ const Maps = () => {
         {/* Scrollable POI list */}
         <div className="flex-1 overflow-y-auto px-4 pb-2">
           <p className="text-[10px] text-muted-foreground mb-2 uppercase tracking-wider">
-            {filtered.length} places
+            {filtered.length} {uiStrings.places}
           </p>
           <div className="space-y-2">
             {filtered.map((poi) => {

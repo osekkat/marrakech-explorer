@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { MapPin, Star, Clock, DollarSign, Heart, Search, Share2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useFavorites } from "@/hooks/useFavorites";
-import { places, categories, neighborhoods } from "@/data";
+import { places, categories, neighborhoods, uiStrings } from "@/data";
 
 const Explore = () => {
   const { t } = useTranslation();
@@ -95,7 +95,9 @@ const Explore = () => {
 
       {/* Results count */}
       <div className="px-5 mb-3">
-        <p className="text-xs text-muted-foreground">{filtered.length} places found</p>
+        <p className="text-xs text-muted-foreground">
+          {filtered.length} {uiStrings.placesFound}
+        </p>
       </div>
 
       {/* Places list */}
@@ -116,7 +118,7 @@ const Explore = () => {
                   </h3>
                   {place.familyFriendly && (
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-teal/10 text-teal font-medium">
-                      👨‍👩‍👧 Family
+                      {uiStrings.familyBadge}
                     </span>
                   )}
                 </div>

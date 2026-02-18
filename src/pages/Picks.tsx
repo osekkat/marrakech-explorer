@@ -4,7 +4,7 @@ import { Heart, Star, ChevronRight, Share2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useFavorites } from "@/hooks/useFavorites";
-import { picks, getImage } from "@/data";
+import { picks, getImage, uiStrings } from "@/data";
 import type { Pick } from "@/data";
 
 const Picks = () => {
@@ -59,7 +59,7 @@ const Picks = () => {
                 <div className="absolute top-3 right-3 flex items-center gap-1.5">
                   {isStale(pick.lastVerifiedAt) && (
                     <span className="px-2 py-0.5 rounded-full bg-accent/80 text-[10px] font-medium text-accent-foreground">
-                      Needs update
+                      {uiStrings.needsUpdate}
                     </span>
                   )}
                   <div className="flex items-center gap-1 px-2 py-1 rounded-full bg-foreground/40 backdrop-blur-sm">
@@ -133,7 +133,7 @@ const Picks = () => {
                 onClick={() => setExpanded(expanded === pick.id ? null : pick.id)}
                 className="flex items-center gap-1 mt-2 text-xs text-primary font-medium min-h-[44px]"
               >
-                {expanded === pick.id ? "Show less" : "Read more"}
+                {expanded === pick.id ? uiStrings.showLess : uiStrings.readMore}
                 <ChevronRight
                   className={`w-3 h-3 transition-transform ${
                     expanded === pick.id ? "rotate-90" : ""

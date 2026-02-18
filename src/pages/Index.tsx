@@ -29,6 +29,8 @@ import {
   itineraryData,
   arrivalChecklist,
   essentialPhrases,
+  arrivalToolLinks,
+  uiStrings,
   getImage,
 } from "@/data";
 
@@ -40,6 +42,12 @@ const iconMap = {
   Sun,
   Clock,
   Plane,
+} as const;
+
+const arrivalIconMap = {
+  CreditCard,
+  Phone,
+  BookOpen,
 } as const;
 
 const Index = () => {
@@ -60,7 +68,7 @@ const Index = () => {
       <div className="relative h-[70vh] overflow-hidden">
         <img
           src={getImage("hero")}
-          alt="Marrakech at sunset"
+          alt={uiStrings.heroAltText}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero" />
@@ -278,22 +286,21 @@ const Index = () => {
 
             {/* Quick tool links */}
             <div className="grid grid-cols-3 gap-2">
-              {[
-                { icon: CreditCard, label: t("arrival.currency"), to: "/toolkit" },
-                { icon: Phone, label: t("arrival.prayerTimes"), to: "/toolkit" },
-                { icon: BookOpen, label: t("arrival.phrases"), to: "/toolkit" },
-              ].map(({ icon: Icon, label, to }) => (
-                <Link
-                  key={label}
-                  to={to}
-                  className="bg-card rounded-xl p-3 shadow-card flex flex-col items-center gap-2 min-h-[44px]"
-                >
-                  <Icon className="w-4 h-4 text-primary" />
-                  <span className="text-[10px] font-medium text-foreground text-center">
-                    {label}
-                  </span>
-                </Link>
-              ))}
+              {arrivalToolLinks.map(({ iconName, labelKey, to }) => {
+                const Icon = arrivalIconMap[iconName];
+                return (
+                  <Link
+                    key={labelKey}
+                    to={to}
+                    className="bg-card rounded-xl p-3 shadow-card flex flex-col items-center gap-2 min-h-[44px]"
+                  >
+                    <Icon className="w-4 h-4 text-primary" />
+                    <span className="text-[10px] font-medium text-foreground text-center">
+                      {t(labelKey)}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </motion.div>
         )}

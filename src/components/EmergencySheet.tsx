@@ -2,7 +2,7 @@ import { Phone, Copy, MapPin, AlertTriangle, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { emergencyContacts, emergencyPhrases } from "@/data";
+import { emergencyContacts, emergencyPhrases, uiStrings } from "@/data";
 
 interface Props {
   open: boolean;
@@ -22,7 +22,7 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
   const shareLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
-        const msg = `I need help! My location: https://maps.google.com/?q=${pos.coords.latitude},${pos.coords.longitude}`;
+        const msg = `${uiStrings.shareLocationMessage} https://maps.google.com/?q=${pos.coords.latitude},${pos.coords.longitude}`;
         if (navigator.share) {
           navigator.share({ text: msg });
         } else {
@@ -104,7 +104,7 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
 
               {/* Emergency phrases */}
               <h3 className="font-display text-base font-semibold mb-3 text-foreground">
-                Emergency Phrases
+                {uiStrings.emergencyPhrasesTitle}
               </h3>
               <div className="space-y-2">
                 {emergencyPhrases.map((phrase, i) => (
@@ -118,7 +118,7 @@ export const EmergencySheet = ({ open, onClose }: Props) => {
                       {phrase.ar} · {phrase.fr}
                     </p>
                     {copied === `${phrase.en} / ${phrase.ar} / ${phrase.fr}` && (
-                      <span className="text-xs text-secondary">Copied!</span>
+                      <span className="text-xs text-secondary">{uiStrings.copiedText}</span>
                     )}
                   </button>
                 ))}

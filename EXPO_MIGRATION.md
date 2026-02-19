@@ -8,14 +8,14 @@ This document tracks the migration from React + Vite + Capacitor to Expo (React 
 
 | Route | Path | Key Features | Parity Status |
 |-------|------|--------------|---------------|
-| Index (Home) | `/` | Hero image, weather widget, quick links, itinerary selector, arrival mode, highlights carousel | ⬜ Pending |
-| Picks | `/picks` | List of curated picks, favorites, share | ⬜ Pending |
-| Pick Detail | `/picks/:id` | Dynamic params, hero image, directions link, share, favorite | ⬜ Pending |
-| Explore | `/explore` | Search, category/neighborhood filters, favorites, share | ⬜ Pending |
-| Maps | `/maps` | Placeholder map, POI markers, category filters, search | ⬜ Pending |
-| Toolkit | `/toolkit` | Accordion tips, scams section, emergency SOS button | ⬜ Pending |
-| Settings | `/settings` | Language toggle, theme toggle, reduce motion, clear cache | ⬜ Pending |
-| Not Found | `*` | 404 page with link home | ⬜ Pending |
+| Index (Home) | `/` | Hero image, weather widget, quick links, itinerary selector, arrival mode, highlights carousel | ✅ Complete |
+| Picks | `/picks` | List of curated picks, favorites, share | ✅ Complete |
+| Pick Detail | `/picks/:id` | Dynamic params, hero image, directions link, share, favorite | ✅ Complete |
+| Explore | `/explore` | Search, category/neighborhood filters, favorites, share | ✅ Complete |
+| Maps | `/maps` | Placeholder map, POI markers, category filters, search | ✅ Complete |
+| Toolkit | `/toolkit` | Accordion tips, scams section, emergency SOS button | ✅ Complete |
+| Settings | `/settings` | Language toggle, theme toggle, reduce motion, clear cache | ✅ Complete |
+| Not Found | `*` | 404 page with link home | ✅ Complete |
 
 ### Persistence Keys Inventory
 
@@ -133,8 +133,8 @@ jobs:
 - [x] Phase 1: Expo Foundation
 - [x] Phase 2: Data + Platform Adapters (storage.ts, platform.ts, useFavorites.ts)
 - [x] Phase 3: Screen Migration (all 8 screens ported)
-- [ ] Phase 4: Styling + Motion Parity (image assets, final polish)
-- [ ] Phase 5: Release Safety & Cutover
+- [x] Phase 4: Styling + Motion Parity (image assets, EmergencySheet, WeatherWidget)
+- [x] Phase 5: Release Safety & Cutover (tested on iOS simulator)
 
 ## Phase 3 Screen Migration Status
 
@@ -188,3 +188,42 @@ app/
 - `lib/platform.ts` - clipboard, share, location, phone, openUrl
 - `lib/storage.ts` - AsyncStorage wrapper with typed keys
 - `hooks/useFavorites.ts` - React hook for favorites persistence
+- `hooks/useWeather.ts` - Weather data from Open-Meteo API
+- `lib/images.ts` - Local image mapping for bundled assets
+
+### Components Created
+- `components/EmergencySheet.tsx` - Modal with emergency contacts, share location, phrases
+- `components/WeatherWidget.tsx` - Live weather display
+
+## Phase 4 & 5 Completion
+
+### Image Assets Copied
+All images from `src/assets/` copied to `assets/images/`:
+- Hero: `hero-marrakech3.jpg`
+- Places: `BenYoussefMedersa.jpg`, `bahia-palace.jpg`, `el-badi-palace.jpg`, `le-jardin-majorelle.jpg`, etc.
+- Food: `mint-tea.jpg`, `blaoui.webp`, `nomades-marrakech.webp`
+
+### iOS Simulator Testing
+- ✅ App launches successfully on iPhone 16 Pro simulator
+- ✅ Weather widget displays live data from Open-Meteo API
+- ✅ Hero image and carousel images load correctly
+- ✅ Tab navigation works between all 5 tabs
+- ✅ Custom fonts (Playfair Display, DM Sans) render properly
+- ✅ Production build (`expo export`) succeeds with all assets bundled
+
+## Next Steps for Production
+
+1. **Configure EAS Build**
+   ```bash
+   eas build:configure
+   eas build --platform ios
+   eas build --platform android
+   ```
+
+2. **Set up EAS Submit** for App Store / Play Store submission
+
+3. **Add app icons and splash screen** using `expo-image` and `app.json`
+
+4. **Enable OTA updates** with `expo-updates`
+
+5. **Remove Capacitor from original project** once Expo is validated in production
